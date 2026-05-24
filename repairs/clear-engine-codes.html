@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Engine Fault Codes (OBD2) — 2007Prius.org</title>
+  <meta name="description" content="How to clear the check engine light on a Gen 2 Toyota Prius using a Bluetooth OBD2 adapter and the Torque app. P0420 catalytic converter code fix.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .step-list { counter-reset: steps; list-style: none; padding: 0; }
+    .step-list li {
+      counter-increment: steps;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      align-items: flex-start;
+    }
+    .step-list li::before {
+      content: counter(steps);
+      background: var(--red);
+      color: white;
+      font-weight: 800;
+      font-size: 0.85rem;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .step-list li p { margin: 0; font-size: 0.95rem; }
+    .step-list li strong { display: block; margin-bottom: 0.2rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="index.html">Repairs</a></li>
+      <li><a href="../timeline.html">Failure Timeline</a></li>
+      <li><a href="../tools.html">Tools &amp; Parts</a></li>
+      <li><a href="../error-codes.html">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>📟 Clear Engine Fault Codes</h1>
+  <p>Check engine light on? A $15 Bluetooth adapter and a free app is all you need.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟢 Easy</span>
+    <span class="meta-tag">⏱ 5 Minutes</span>
+    <span class="meta-tag">💰 ~$15 one-time (adapter)</span>
+    <span class="meta-tag">📱 Android</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">Home</a> › <a href="index.html">Repairs</a> › Clear Engine Codes
+</div>
+
+<div class="repair-content">
+
+  <div class="notice warning">
+    <strong>Read the code before clearing it.</strong> Clearing a code without understanding the cause just turns the light off temporarily — it will return if the underlying issue isn't fixed. Always note what code appeared and look it up in the <a href="../error-codes.html">error codes guide</a> before clearing.
+  </div>
+
+  <h2>What You Need</h2>
+  <div class="cards" style="margin-bottom:1.5rem">
+    <div class="card">
+      <div class="card-icon">🔌</div>
+      <h3>Bluetooth OBD2 Adapter</h3>
+      <p>A small dongle that plugs into the OBD2 port under the dash. Look for one described as "ELM327 Bluetooth v1.5" — avoid the very cheapest clones. PIN code is typically <strong>1234</strong>. Cost: $10–$30 on Amazon.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📱</div>
+      <h3>Torque Lite (Free) or Torque Pro ($5)</h3>
+      <p>Android app that connects to the adapter over Bluetooth. Torque Lite is free and enough for reading and clearing codes. Torque Pro adds live gauges and data logging.</p>
+    </div>
+  </div>
+
+  <div class="notice tip">
+    <strong>Where is the OBD2 port?</strong> On the Gen 2 Prius it's under the driver's side dashboard, to the left of the steering column — a trapezoid-shaped 16-pin port. It's sometimes near or inside the glovebox depending on the trim. You can leave the adapter plugged in permanently; it only draws power when the car is on.
+  </div>
+
+  <h2>Step-by-Step: Read and Clear a Code</h2>
+  <ol class="step-list">
+    <li>
+      <p><strong>Plug the OBD2 adapter into the port.</strong> You'll usually see a small LED light up on the adapter confirming it has power.</p>
+    </li>
+    <li>
+      <p><strong>Turn the car to Ready mode</strong> (or at minimum turn the ignition to "On" without starting). The ECU needs to be active for the adapter to communicate.</p>
+    </li>
+    <li>
+      <p><strong>On your Android phone, enable Bluetooth</strong> and pair with the adapter. Go to Bluetooth settings, scan for devices, and select the OBD adapter. When prompted for a PIN, enter <strong>1234</strong>.</p>
+    </li>
+    <li>
+      <p><strong>Open the Torque Lite app.</strong> Wait a few seconds — you should see the message <em>"Connected to ECU OK"</em> at the bottom of the screen. If it says "Not Connected," verify Bluetooth is paired and the adapter has power.</p>
+    </li>
+    <li>
+      <p><strong>Tap the gear/menu icon → "Fault Codes" → "Show logged faults."</strong> The app will query the ECU and display any active or stored codes.</p>
+    </li>
+    <li>
+      <p><strong>Note the code(s)</strong> — write them down or screenshot them. Look up what they mean in the <a href="../error-codes.html">error codes guide</a> before doing anything else.</p>
+    </li>
+    <li>
+      <p><strong>To clear:</strong> tap the gear icon again → "Fault Codes" → <strong>"Clear all logged faults."</strong> Confirm if prompted.</p>
+    </li>
+    <li>
+      <p><strong>Check the dashboard.</strong> The check engine light should be off. Turn the car off and back on to confirm the light doesn't immediately return.</p>
+    </li>
+  </ol>
+
+  <h2>The Most Common Code: P0420</h2>
+  <p>
+    On a high-mileage Gen 2 Prius, <strong>P0420</strong> (Catalyst System Efficiency Below Threshold — Bank 1) is the most frequent check engine light cause. The catalytic converter has degraded to the point where the downstream O2 sensor detects it's no longer cleaning exhaust efficiently.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Code</th><th>Meaning</th><th>What to do</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>P0420</strong></td>
+          <td>Catalytic converter below efficiency threshold</td>
+          <td>Check O2 sensor first (cheaper fix). If sensor is fine, cat needs replacement. Clearing the code temporarily turns off the light — it returns within a few hundred miles if the cat is truly failing.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice tip">
+    <strong>P0420 returning every few months?</strong> This was a recurring pattern on this Prius at higher mileage. If the car passes emissions otherwise and you're not in a state that does visual inspections, some owners manage this by clearing the code periodically. Long-term, the fix is replacing the O2 sensor (try this first, it's cheaper) or the catalytic converter.
+  </div>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Leave the adapter plugged in — it's convenient to have always available and draws no power when the car is off</li>
+    <li>After clearing codes, drive at least one complete trip cycle before checking if the light stays off — some codes need the ECU to run through monitoring conditions before confirming a fix</li>
+    <li>If the same code returns within a day, the root cause is still present and needs actual repair</li>
+    <li>Torque Pro ($5 upgrade) is worth it — live gauges, battery temperature monitoring, and data logging are useful for diagnosing intermittent issues</li>
+    <li>iPhone users: the app ecosystem is different — look for <strong>OBD Fusion</strong> or <strong>Car Scanner</strong>, and get a Bluetooth 4.0 (BLE) adapter rather than the classic Bluetooth version</li>
+  </ul>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      P0420 appeared regularly in the later years of ownership — every few months, like clockwork. The catalytic converter on a high-mileage Prius eventually stops meeting the efficiency threshold the ECU expects, and the downstream O2 sensor catches it.
+    </p>
+    <p>
+      Having the OBD2 adapter permanently plugged in and Torque on the phone meant clearing it took under two minutes. It's one of the most practical tools any Prius owner can have — and at $15, it's the cheapest diagnostic tool that will ever save you a $100 dealer diagnostic fee.
+    </p>
+  </div>
+
+  <div style="margin-top:2rem">
+    <a href="index.html" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Repairs</a>
+    <a href="../timeline.html">Failure Timeline</a>
+    <a href="../tools.html">Tools &amp; Parts</a>
+    <a href="../error-codes.html">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+</body>
+</html>
