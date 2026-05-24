@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combination Meter Repair — 2007Prius.org</title>
+  <meta name="description" content="How to fix the Gen 2 Prius combination meter (instrument cluster) failure. Speedometer drops to 0, fuel gauge stuck, odometer frozen. DIY capacitor repair guide.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="index.html">Repairs</a></li>
+      <li><a href="../timeline.html">Failure Timeline</a></li>
+      <li><a href="../tools.html">Tools &amp; Parts</a></li>
+      <li><a href="../error-codes.html">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>🎛️ Combination Meter Failure</h1>
+  <p>Speedometer drops to 0. Fuel gauge stuck. Odometer frozen. Here's the fix.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟡 Medium Difficulty</span>
+    <span class="meta-tag">⏱ 2–4 Hours</span>
+    <span class="meta-tag">💰 $30–$150 DIY</span>
+    <span class="meta-tag">📅 Typical: 80k–110k miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">Home</a> › <a href="index.html">Repairs</a> › Combination Meter
+</div>
+
+<div class="repair-content">
+
+  <div class="notice warning">
+    <strong>Florida / hot climate note:</strong> High humidity and heat accelerate the capacitor failure that causes this. If you're in the South and approaching 80k miles, this failure is coming — plan for it.
+  </div>
+
+  <h2>Symptoms</h2>
+  <ul>
+    <li>Speedometer suddenly drops to 0 mph while driving (car still moves normally)</li>
+    <li>Tachometer may also drop or act erratically</li>
+    <li>Fuel gauge sticks at one position</li>
+    <li>Odometer stops counting miles</li>
+    <li>All gauges may return to normal briefly, then fail again</li>
+    <li>May trigger a warning light or master warning triangle</li>
+  </ul>
+
+  <h2>What's Happening</h2>
+  <p>
+    The Gen 2 Prius combination meter (instrument cluster) contains electrolytic capacitors on its circuit board. These capacitors regulate power to the stepper motors that drive the gauges. Over time — especially in hot, humid climates — the capacitors swell, leak, or simply degrade. When they fail, the gauges lose power and drop.
+  </p>
+  <p>
+    This is a known manufacturing weakness on Gen 2 Prius clusters made between 2004–2008. The capacitors used were not rated for the temperature extremes inside a dashboard.
+  </p>
+  <p>
+    The good news: the fix is replacing $5 worth of capacitors, not the $500–$900 cluster the dealer will quote you.
+  </p>
+
+  <h2>Options</h2>
+  <div class="table-wrap cost-table">
+    <table>
+      <thead><tr><th>Option</th><th>Cost</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>DIY capacitor repair</td>
+          <td>$5–$30 in parts</td>
+          <td>Best option. Requires soldering. Takes 2–4 hours first time.</td>
+        </tr>
+        <tr>
+          <td>Electronics repair shop</td>
+          <td>$80–$150</td>
+          <td>Bring the cluster in. Most shops that do board-level repair can do this.</td>
+        </tr>
+        <tr>
+          <td>Junkyard replacement cluster</td>
+          <td>$50–$150</td>
+          <td>Works temporarily but the junkyard unit may have the same cap problem.</td>
+        </tr>
+        <tr>
+          <td>Toyota dealer replacement</td>
+          <td>$500–$900</td>
+          <td>New OEM cluster. Works, but vastly overpriced for what is a capacitor failure.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What You'll Need</h2>
+  <h3>Tools</h3>
+  <ul>
+    <li>Plastic pry tools (trim removal kit)</li>
+    <li>Phillips and flathead screwdrivers</li>
+    <li>10mm socket</li>
+    <li>Soldering iron (30–40W is fine)</li>
+    <li>Solder wick / desoldering pump</li>
+    <li>Rosin-core solder</li>
+    <li>Multimeter (optional but helpful)</li>
+  </ul>
+
+  <h3>Parts — Replacement Capacitors</h3>
+  <p>The specific capacitors vary slightly by cluster version, but commonly failing ones include:</p>
+  <ul>
+    <li>1000µF / 16V electrolytic (×2–4 depending on board revision)</li>
+    <li>100µF / 16V electrolytic (×2)</li>
+    <li>10µF / 16V electrolytic (×several)</li>
+  </ul>
+  <div class="notice tip">
+    <strong>Tip:</strong> Buy a capacitor repair kit specifically listed for 2004–2008 Prius combination meters — they're available on eBay for $10–$20 and include the correct values. You can also source individual caps from Mouser or Digi-Key if you know what you're replacing.
+  </div>
+
+  <h2>Step-by-Step: Removing the Cluster</h2>
+  <ol>
+    <li>Disconnect the negative terminal of the 12V auxiliary battery (under the cargo floor). Wait 5 minutes before touching any dash components.</li>
+    <li>Using plastic pry tools, gently remove the instrument cluster trim bezel — it's clipped in, no screws. Start from the bottom and work up.</li>
+    <li>Remove the 4 screws holding the cluster in place (usually 10mm or Phillips).</li>
+    <li>Carefully pull the cluster forward. There are two wiring harness connectors on the back — squeeze the tab and pull straight off.</li>
+    <li>The cluster is now free. Take it to a clean workspace.</li>
+  </ol>
+
+  <h2>Step-by-Step: Capacitor Repair</h2>
+  <ol>
+    <li>On the back of the cluster, remove the 4–6 Phillips screws holding the circuit board cover.</li>
+    <li>Carefully lift out the circuit board. Note the orientation before removing.</li>
+    <li>Inspect the capacitors — swollen tops (should be flat), brown residue around the base, or leaking electrolyte are signs of failure. Even if they look okay, replace them if you're already in here.</li>
+    <li>Using the soldering iron and wick, remove each old capacitor. Note polarity (the negative leg is marked with a stripe on the capacitor body).</li>
+    <li>Solder new capacitors in — same polarity, same position. New caps should be the same or higher voltage rating, same capacitance.</li>
+    <li>Inspect all solder joints — they should be shiny cones, not dull blobs.</li>
+    <li>Reassemble the board and reinstall in cluster.</li>
+  </ol>
+
+  <h2>Reinstallation</h2>
+  <ol>
+    <li>Reconnect the two harness connectors — click until they seat.</li>
+    <li>Slide cluster back in and replace screws.</li>
+    <li>Replace the trim bezel — push it in from top, then snap the clips along the sides and bottom.</li>
+    <li>Reconnect the 12V battery.</li>
+    <li>Start the car and verify all gauges work through a full startup cycle.</li>
+  </ol>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      This repair is one of the most satisfying DIY fixes on the Gen 2 Prius. Watching all four gauges sweep perfectly on startup after the repair — knowing you just saved $400+ — never gets old.
+    </p>
+    <p>
+      If you've never soldered before, practice on an old electronics board first. The cluster's components are small but not microscopic. A 30W iron with a fine tip is enough.
+    </p>
+    <p>
+      A junkyard cluster works as a temporary fix, but you're just buying time — it has the same capacitors that will eventually fail under the same conditions. Do the capacitor repair on whichever cluster you use.
+    </p>
+  </div>
+
+  <h2>When to See a Mechanic</h2>
+  <p>
+    If you replace the capacitors and the gauges still misbehave, the stepper motors themselves may have failed — a much less common issue. At that point, a junkyard cluster (with fresh capacitors) is the practical solution.
+  </p>
+
+  <div style="margin-top:2rem">
+    <a href="index.html" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Repairs</a>
+    <a href="../timeline.html">Failure Timeline</a>
+    <a href="../tools.html">Tools &amp; Parts</a>
+    <a href="../error-codes.html">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+</body>
+</html>

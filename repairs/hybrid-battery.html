@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrid Battery Replacement — 2007Prius.org</title>
+  <meta name="description" content="Gen 2 Toyota Prius hybrid battery guide — how to test, recondition, rebuild, or replace the HV battery pack. Red triangle, P0A80, battery warning light.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="index.html">Repairs</a></li>
+      <li><a href="../timeline.html">Failure Timeline</a></li>
+      <li><a href="../tools.html">Tools &amp; Parts</a></li>
+      <li><a href="../error-codes.html">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>🔋 Hybrid Battery Pack</h1>
+  <p>The big one. Red triangle, power loss, battery warning. What your options actually are.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🔴 Hard</span>
+    <span class="meta-tag">⏱ 3–6 Hours</span>
+    <span class="meta-tag">💰 $800–$3,500 depending on path</span>
+    <span class="meta-tag">📅 Typical: 120k–200k+ miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">Home</a> › <a href="index.html">Repairs</a> › Hybrid Battery
+</div>
+
+<div class="repair-content">
+
+  <div class="notice danger">
+    <strong>High voltage warning.</strong> The Gen 2 Prius hybrid battery operates at ~200V DC. Always disconnect the orange service plug before touching any HV components, and wear 1000V-rated insulated gloves. This is not optional.
+  </div>
+
+  <h2>Symptoms</h2>
+  <ul>
+    <li>Red triangle (master warning) on dashboard</li>
+    <li>HV Battery warning light (battery icon)</li>
+    <li>Significant loss of power, especially on hills or acceleration</li>
+    <li>Poor fuel economy (Prius running in "limp mode" on engine only)</li>
+    <li>State of Charge (SOC) bar graph behaves erratically</li>
+    <li>Car won't start in Ready mode</li>
+  </ul>
+
+  <h2>About the Gen 2 Hybrid Battery</h2>
+  <p>
+    The Gen 2 Prius uses a 201.6V NiMH (Nickel-Metal Hydride) battery pack composed of 28 modules. Each module contains 6 cells at 1.2V, for a total of 168 cells. The modules are connected in series inside the battery case, which is located behind the rear seat.
+  </p>
+  <p>
+    When one or more modules degrades significantly below the others, the pack's overall performance drops. The car's battery management system detects this imbalance and throws a fault. In many cases, the majority of modules are still healthy — only 2–5 have failed.
+  </p>
+
+  <h2>Step 1: Test First, Replace Nothing Yet</h2>
+  <p>Before spending any money, run a battery health test:</p>
+  <ol>
+    <li>Get an ELM327 Bluetooth OBD2 adapter (under $30) and the <strong>Dr. Prius app</strong></li>
+    <li>Run the battery health test — it shows individual module voltages</li>
+    <li>Note which modules show significantly lower voltage than the others (more than 0.3V difference is a red flag)</li>
+    <li>Read the OBD2 codes — P0A80, P3000, or P3006 confirm battery issues</li>
+  </ol>
+
+  <div class="notice tip">
+    <strong>Dr. Prius is free for basic battery testing</strong> and has saved countless Prius owners from unnecessary battery replacements. Run this test before talking to any shop — shops that don't use it are guessing.
+  </div>
+
+  <h2>Your Options (In Order of Cost)</h2>
+
+  <h3>Option 1: Recondition (Grid Charge + Deep Discharge Cycles)</h3>
+  <p>Cost: $0–$50 | Works for: early-stage degradation, mild imbalance</p>
+  <p>
+    Running the battery through several deep charge and discharge cycles can sometimes rebalance modules and temporarily restore performance. This works best when the degradation is mild and the pack has been underused. Results vary — it's worth trying first if the car is still drivable.
+  </p>
+
+  <h3>Option 2: Replace Individual Modules</h3>
+  <p>Cost: $20–$60 per module | Works for: isolated module failure</p>
+  <p>
+    If Dr. Prius shows only 2–4 bad modules, you can source replacement modules from a junkyard or eBay seller and swap only those. Gen 2 modules are widely available. This extends pack life significantly when done correctly.
+  </p>
+  <div class="notice warning">
+    <strong>Match modules carefully.</strong> Replacement modules should have similar capacity and internal resistance to the remaining healthy modules. Mixing very old modules with new ones can cause new imbalance problems.
+  </div>
+
+  <h3>Option 3: Rebuilt / Reconditioned Pack</h3>
+  <p>Cost: $800–$1,500 + install | Recommended for: widespread module failure</p>
+  <p>
+    Many shops sell rebuilt Gen 2 packs — they test all 28 modules, replace the bad ones, and balance the pack before selling. This is the best value for a car that's otherwise in good shape. Look for a pack with at least a 1-year warranty and a return policy.
+  </p>
+
+  <h3>Option 4: New OEM Battery</h3>
+  <p>Cost: $2,500–$3,500 + install</p>
+  <p>
+    Toyota sells new replacement packs. At this price point, it only makes financial sense if the rest of the car is in excellent shape and has low mileage. For a high-mileage Gen 2, a rebuilt pack is the smarter choice.
+  </p>
+
+  <h2>What You'll Need (for Module Swap or Pack Replacement)</h2>
+  <ul>
+    <li>1000V-rated insulated gloves — mandatory</li>
+    <li>Insulated screwdrivers and socket set</li>
+    <li>10mm and 8mm sockets</li>
+    <li>Multimeter</li>
+    <li>Dr. Prius app + ELM327 adapter</li>
+    <li>Replacement modules or rebuilt pack</li>
+  </ul>
+
+  <h2>HV Safety Procedure — Always Do This First</h2>
+  <ol>
+    <li>Turn the car off and remove the key</li>
+    <li>Open the trunk / cargo area and fold down the rear seat</li>
+    <li>Locate the orange service plug cover on the right side of the battery case</li>
+    <li>With insulated gloves on, open the cover and pull the service plug straight out — this physically breaks the HV circuit</li>
+    <li>Wait 10 minutes before touching any HV components — capacitors in the inverter need time to discharge</li>
+  </ol>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      The hybrid battery lasted far longer than most people expect. This is one of the most reliable parts of the Gen 2 Prius. When it does finally go, it usually gives you warning — slowly degrading fuel economy, intermittent red triangles — before completely failing.
+    </p>
+    <p>
+      Don't let a mechanic scare you into a $3,000 dealer replacement without running Dr. Prius first. Many "failed" batteries have only 2–4 bad modules that cost $100 total to fix.
+    </p>
+    <p>
+      If you're in Florida, check your local Pull-A-Part or LKQ — Gen 2 batteries from lower-mileage donor cars can be an excellent value, especially if you test the modules before installing.
+    </p>
+  </div>
+
+  <div style="margin-top:2rem">
+    <a href="index.html" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Repairs</a>
+    <a href="../timeline.html">Failure Timeline</a>
+    <a href="../tools.html">Tools &amp; Parts</a>
+    <a href="../error-codes.html">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABS Actuator Repair — 2007Prius.org</title>
+  <meta name="description" content="Gen 2 Prius ABS actuator failure guide. Three warning lights at once (ABS, VSC, brake). The 3 amigos. Dealer wants $1,500 — here are the real options.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="index.html">Repairs</a></li>
+      <li><a href="../timeline.html">Failure Timeline</a></li>
+      <li><a href="../tools.html">Tools &amp; Parts</a></li>
+      <li><a href="../error-codes.html">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>🛑 ABS Actuator Failure</h1>
+  <p>Three warning lights. Pump running constantly. Dealer wants $1,500. Here's what to actually do.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🔴 Hard</span>
+    <span class="meta-tag">⏱ 2–4 Hours</span>
+    <span class="meta-tag">💰 $200–$500 rebuilt / $1,000–$2,000 OEM</span>
+    <span class="meta-tag">📅 Typical: 150k–220k miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">Home</a> › <a href="index.html">Repairs</a> › ABS Actuator
+</div>
+
+<div class="repair-content">
+
+  <div class="notice danger">
+    <strong>Do not ignore this repair.</strong> When the ABS actuator pump runs continuously, it will drain your 12V battery within hours. More importantly, ABS and brake assist are disabled — your stopping distance increases significantly. Address this promptly.
+  </div>
+
+  <h2>Symptoms — The "3 Amigos"</h2>
+  <p>Gen 2 Prius owners know this pattern immediately:</p>
+  <ul>
+    <li>ABS warning light on</li>
+    <li>VSC (Vehicle Stability Control) warning light on</li>
+    <li>Brake warning light (!) on</li>
+    <li>All three appear simultaneously</li>
+    <li>Audible pump motor running continuously (even with key off)</li>
+    <li>12V battery drains overnight</li>
+    <li>Brake pedal may feel different — higher or spongier</li>
+  </ul>
+
+  <div class="notice tip">
+    <strong>Read the code first.</strong> Code C1210 (Brake Actuator Malfunction) confirms the actuator. ABS light alone with a wheel speed sensor code (C0200, C0205) is a different problem — a bad sensor or wiring, not the actuator.
+  </div>
+
+  <h2>What Is the ABS Actuator?</h2>
+  <p>
+    The ABS actuator (also called the brake actuator assembly or skid control actuator) is a combined unit that houses:
+  </p>
+  <ul>
+    <li>The ABS modulator (controls brake pressure to individual wheels)</li>
+    <li>A high-pressure electric pump motor</li>
+    <li>A hydraulic accumulator</li>
+    <li>The skid control ECU (on some versions)</li>
+  </ul>
+  <p>
+    On the Gen 2 Prius, the brake system is more complex than a standard car because it integrates regenerative braking with conventional hydraulic braking. The actuator coordinates these two systems. When the pump motor or its internal seals fail, the entire assembly needs attention.
+  </p>
+
+  <h2>Your Options</h2>
+
+  <h3>Option 1: Rebuilt / Remanufactured Actuator</h3>
+  <p>Cost: $200–$500 + labor | Best value option</p>
+  <p>
+    Several companies rebuild Gen 2 Prius ABS actuators. They replace the pump motor, seals, and accumulator, then test the unit before shipping. Look for a rebuild with at least a 1-year warranty. This is the best balance of cost and reliability.
+  </p>
+
+  <h3>Option 2: Junkyard Unit</h3>
+  <p>Cost: $100–$250 | Gamble — may have the same worn pump</p>
+  <p>
+    A used actuator from a junkyard works if the donor car had low miles. The risk: you don't know if that pump is about to fail too. If you go this route, inspect the unit and verify it doesn't show the same "pump runs continuously" behavior before installing.
+  </p>
+
+  <h3>Option 3: Toyota OEM New</h3>
+  <p>Cost: $1,000–$2,000 + labor</p>
+  <p>
+    Dealer pricing. Justified only on a low-mileage car where the rest of the system is perfect. On a 180k-mile Prius, a rebuilt unit is the practical choice.
+  </p>
+
+  <h3>Option 4: Pump Motor Rebuild (Advanced)</h3>
+  <p>Cost: $50–$150 in parts | Requires mechanical skills</p>
+  <p>
+    The pump motor inside the actuator can sometimes be rebuilt by replacing its brushes and/or bearings. This is documented on forums like PriusChat. It's technically demanding but the cheapest path for those comfortable with disassembly.
+  </p>
+
+  <h2>What You'll Need</h2>
+  <ul>
+    <li>Rebuilt ABS actuator assembly (or replacement)</li>
+    <li>DOT 3 brake fluid (fresh)</li>
+    <li>Brake line wrench set (10mm, 12mm)</li>
+    <li>Vacuum brake bleeder or helper for brake bleeding</li>
+    <li>10mm and 12mm socket set</li>
+    <li>Shop rags and catch pan</li>
+    <li>OBD2 scanner capable of clearing ABS codes (generic ELM327 may not clear C-codes — Techstream is better)</li>
+  </ul>
+
+  <h2>Overview: Replacement Steps</h2>
+  <div class="notice warning">
+    <strong>Brake work requires care.</strong> This is a safety-critical system. If you're not confident in brake system work, have a trusted mechanic install the unit you source. Sourcing a rebuilt actuator yourself and having a shop install it is a good cost-saving middle ground.
+  </div>
+  <ol>
+    <li>Disconnect the 12V auxiliary battery (negative first)</li>
+    <li>Locate the ABS actuator assembly — it's in the engine bay, driver's side, near the brake master cylinder</li>
+    <li>Using brake line wrenches, carefully loosen and remove the brake lines from the actuator (4 lines on most Gen 2). Plug them immediately to prevent fluid loss and air entry</li>
+    <li>Disconnect the electrical connectors from the actuator and skid control ECU</li>
+    <li>Remove the actuator mounting bolts (typically 3 bolts, 10mm)</li>
+    <li>Lift out the old actuator</li>
+    <li>Install the replacement in reverse order — torque brake line fittings to spec (11 ft-lbs)</li>
+    <li>Reconnect electrical connectors and 12V battery</li>
+    <li><strong>Bleed the entire brake system</strong> — all four corners, starting farthest from the master cylinder (rear passenger, rear driver, front passenger, front driver)</li>
+    <li>Clear ABS/VSC/brake codes with OBD2 scanner</li>
+    <li>Test drive carefully — verify brakes feel normal and no warning lights return</li>
+  </ol>
+
+  <h2>After Installation: Skid Control Calibration</h2>
+  <p>
+    After replacing the actuator, the skid control ECU may need a zero-point calibration for the deceleration sensor. This usually self-corrects after driving in a straight line on a level road, but if code C1336 appears, the calibration procedure must be completed. Techstream can force this process; otherwise, multiple normal drive cycles usually clear it.
+  </p>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      The "3 amigos" lighting up is alarming, but don't panic. The car is still drivable — your conventional brakes still work, just without ABS assist. However, the continuously-running pump is actively draining your battery, so don't leave it sitting.
+    </p>
+    <p>
+      If you have a second car, disconnect the 12V battery overnight to prevent a dead battery situation while you source parts. The Prius will remember its settings when reconnected.
+    </p>
+    <p>
+      The best deal is usually: source a quality rebuilt actuator online ($200–$400), then pay a local mechanic just for the installation and brake bleeding ($100–$200 labor). Total: $300–$600 vs. $1,500+ at the dealer.
+    </p>
+  </div>
+
+  <div style="margin-top:2rem">
+    <a href="index.html" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Repairs</a>
+    <a href="../timeline.html">Failure Timeline</a>
+    <a href="../tools.html">Tools &amp; Parts</a>
+    <a href="../error-codes.html">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+</body>
+</html>

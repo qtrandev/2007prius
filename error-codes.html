@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Codes — 2007Prius.org</title>
+  <meta name="description" content="Common OBD2 and hybrid-specific error codes for the Gen 2 Toyota Prius (2004–2009). What the red triangle actually means.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="repairs/">Repairs</a></li>
+      <li><a href="timeline.html">Failure Timeline</a></li>
+      <li><a href="tools.html">Tools &amp; Parts</a></li>
+      <li><a href="error-codes.html">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Error Codes</h1>
+  <p>What the red triangle actually means — and what to do about it.</p>
+</div>
+
+<main>
+
+  <section>
+    <div class="notice danger">
+      <strong>Red triangle on dash?</strong> This is your car's "master warning" light. It means at least one hybrid system fault is active. Do NOT ignore it — read the code immediately with an OBD2 scanner before driving further. See <a href="tools.html" style="color:inherit;text-decoration:underline">Tools &amp; Parts</a> for scanner recommendations.
+    </div>
+  </section>
+
+  <section>
+    <h2>Hybrid System Codes (P3xxx / Px0A)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Description</th><th>Common Cause</th><th>Urgency</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>P0A80</strong></td>
+            <td>Replace Hybrid Battery Pack</td>
+            <td>One or more battery modules has degraded significantly. May recondition or need replacement.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>P3000</strong></td>
+            <td>HV Battery Malfunction</td>
+            <td>General hybrid battery system fault. Check individual module voltages with Dr. Prius app.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>P3006</strong></td>
+            <td>HV Battery Module Voltage Variation</td>
+            <td>One module is significantly weaker than others — common sign of aging battery needing reconditioning.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>P3009</strong></td>
+            <td>HV Battery Leak Detected</td>
+            <td>Insulation failure in HV system. Could be wiring, battery casing, or inverter. Get this diagnosed professionally.</td>
+            <td>🔴 Immediate</td>
+          </tr>
+          <tr>
+            <td><strong>P0A0F</strong></td>
+            <td>Drive Motor "A" Position Sensor Circuit</td>
+            <td>Resolver issue or wiring fault in MG2 (traction motor). Check wiring harness first.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>P0A93</strong></td>
+            <td>Inverter Cooling System Performance</td>
+            <td>Inverter coolant pump failing or failed. Replace immediately.</td>
+            <td>🔴 Immediate</td>
+          </tr>
+          <tr>
+            <td><strong>P0A94</strong></td>
+            <td>DC/DC Converter Performance</td>
+            <td>DC-DC converter (charges 12V from HV battery) is underperforming. Often precedes 12V battery failure.</td>
+            <td>🟡 Soon</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Brake &amp; ABS System Codes (Cxxxx)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Description</th><th>Common Cause</th><th>Urgency</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C1210</strong></td>
+            <td>Brake Actuator Malfunction</td>
+            <td>ABS actuator pump failing. You'll see ABS, VSC, and brake lights together. See <a href="repairs/abs-actuator.html">ABS guide</a>.</td>
+            <td>🔴 Immediate</td>
+          </tr>
+          <tr>
+            <td><strong>C0200</strong></td>
+            <td>ABS Wheel Speed Sensor — Front Right</td>
+            <td>Sensor or wiring fault. Common after suspension work. Check wiring harness at the wheel.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>C0205</strong></td>
+            <td>ABS Wheel Speed Sensor — Front Left</td>
+            <td>Same as above, opposite side.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>C0210</strong></td>
+            <td>ABS Wheel Speed Sensor — Rear Right</td>
+            <td>Rear sensors are often damaged by rust or road debris. Inspect sensor and tone ring.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>C1336</strong></td>
+            <td>Zero Point Calibration of Deceleration Sensor Undone</td>
+            <td>After battery disconnect or skid control ECU reset, the sensor needs recalibration. Drive in a straight line on flat road to reset.</td>
+            <td>🟢 Low</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Engine Codes (P0xxx)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Description</th><th>Common Cause</th><th>Urgency</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>P0301–P0304</strong></td>
+            <td>Misfire — Cylinders 1–4</td>
+            <td>Spark plugs, ignition coils, or injectors. Check plugs first — they're often overdue.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>P0420</strong></td>
+            <td>Catalyst System Efficiency Below Threshold</td>
+            <td>Catalytic converter degraded. O2 sensor could also be the culprit. Test sensor first before replacing cat.</td>
+            <td>🟡 Monitor</td>
+          </tr>
+          <tr>
+            <td><strong>P0441</strong></td>
+            <td>Evaporative Emission Control System Incorrect Purge Flow</td>
+            <td>Often a loose or bad gas cap. Tighten cap and clear code — if it returns, check EVAP lines.</td>
+            <td>🟢 Low</td>
+          </tr>
+          <tr>
+            <td><strong>P0171</strong></td>
+            <td>System Too Lean (Bank 1)</td>
+            <td>MAF sensor dirty or failing, vacuum leak, or low fuel pressure. Clean MAF sensor first.</td>
+            <td>🟡 Soon</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Understanding the Warning Lights</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔺</div>
+        <h3>Red Triangle (Master Warning)</h3>
+        <p>Hybrid system fault. Read codes immediately. Could be anything from inverter pump to hybrid battery to minor sensor issue. Do not ignore.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔋</div>
+        <h3>HV Battery Warning</h3>
+        <p>Hybrid battery is failing or has a cell issue. Run Dr. Prius battery test and read codes. May be reconditionable.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛑</div>
+        <h3>ABS + VSC + Brake Lights (3 at once)</h3>
+        <p>The "3 amigos" on a Gen 2. Almost always the ABS actuator assembly. See the <a href="repairs/abs-actuator.html">ABS actuator guide</a>.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌡️</div>
+        <h3>Thermometer Warning</h3>
+        <p>Engine overheating. Pull over immediately. On a Prius this could indicate head gasket issues at high mileage. Let engine cool fully before checking coolant level.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="notice tip">
+      <strong>Always clear codes after repair</strong> and drive a full trip cycle before assuming the repair worked. Some codes require the car to complete specific drive conditions before confirming a fix. If the same code returns within a day of driving, the root cause is still present.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="repairs/">Repairs</a>
+    <a href="timeline.html">Failure Timeline</a>
+    <a href="tools.html">Tools &amp; Parts</a>
+    <a href="error-codes.html">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+</body>
+</html>
