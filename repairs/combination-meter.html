@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combination Meter Repair — 2007Prius.org</title>
-  <meta name="description" content="How to fix the Gen 2 Prius combination meter (instrument cluster) failure. Speedometer drops to 0, fuel gauge stuck, odometer frozen. DIY capacitor repair guide.">
+  <meta name="description" content="How to fix the Gen 2 Prius combination meter (instrument cluster) failure. Speedometer drops to 0, fuel gauge stuck, odometer frozen. DIY capacitor repair guide for 2004–2009 Prius.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
   <link rel="stylesheet" href="../assets/css/style.css?v=20260525">
 </head>
@@ -61,7 +61,7 @@
     The Gen 2 Prius combination meter (instrument cluster) contains electrolytic capacitors on its circuit board. These capacitors regulate power to the stepper motors that drive the gauges. Over time — especially in hot, humid climates — the capacitors swell, leak, or simply degrade. When they fail, the gauges lose power and drop.
   </p>
   <p>
-    This is a known manufacturing weakness on Gen 2 Prius clusters made between 2004–2008. The capacitors used were not rated for the temperature extremes inside a dashboard.
+    This is a known manufacturing weakness on Gen 2 Prius clusters made between 2004–2009. The capacitors used were not rated for the temperature extremes inside a dashboard.
   </p>
   <p>
     The good news: the fix is replacing $5 worth of capacitors, not the $500–$900 cluster the dealer will quote you.
@@ -96,6 +96,13 @@
     </table>
   </div>
 
+  <h2>Video Walkthrough</h2>
+  <p>This <a href="https://www.reddit.com/r/prius/wiki/index/common-issues/" target="_blank" rel="noopener noreferrer">Reddit r/prius ↗</a> recommended video shows full cluster removal and reinstallation — not the capacitor repair itself, but the disassembly steps are the same.</p>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/SB1dVFa3ofM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="How to Replace Toyota Prius Combination Meter — Scooter 911"></iframe>
+  </div>
+  <p style="font-size:0.82rem;color:var(--muted);margin-top:-0.25rem">"How to Replace Toyota Prius Combination Meter" by Scooter 911 on YouTube</p>
+
   <h2>What You'll Need</h2>
   <h3>Tools</h3>
   <ul>
@@ -109,22 +116,24 @@
   </ul>
 
   <h3>Parts — Replacement Capacitors</h3>
-  <p>The specific capacitors vary slightly by cluster version, but commonly failing ones include:</p>
+  <p>There are three PCB revisions across the Gen 2 cluster (2004, 2005, and 2006–2009) — each has slightly different capacitor layouts. The most commonly failing capacitor in all revisions is:</p>
   <ul>
-    <li>1000µF / 16V electrolytic (×2–4 depending on board revision)</li>
-    <li>100µF / 16V electrolytic (×2)</li>
-    <li>10µF / 16V electrolytic (×several)</li>
+    <li><strong>100µF / 16V electrolytic</strong> — this is the primary failure cap. When you replace it, upgrade to 220µF / 16V for a more reliable repair (same footprint, same voltage, better headroom).</li>
   </ul>
+  <p>Identify your board revision and cross-reference any other small caps (typically 47µF or 10µF) that show swelling or brown residue. Replace all suspect caps while you're in there.</p>
   <div class="notice tip">
-    <strong>Tip:</strong> Buy a capacitor repair kit specifically listed for 2004–2008 Prius combination meters — they're available on eBay for $10–$20 and include the correct values. You can also source individual caps from Mouser or Digi-Key if you know what you're replacing.
+    <strong>Tip:</strong> Buy a capacitor repair kit specifically listed for 2004–2009 Prius combination meters — available on <a href="https://www.ebay.com/sch/i.html?_nkw=prius+combination+meter+capacitor+kit" target="_blank" rel="noopener noreferrer">eBay ↗</a> for $10–$20 and on <a href="https://www.amazon.com/s?k=prius+combination+meter+capacitor+kit" target="_blank" rel="noopener noreferrer">Amazon ↗</a> — kits include the correct values for your revision. You can also source individual caps from Mouser or Digi-Key if you prefer to buy exact parts.
   </div>
 
   <h2>Step-by-Step: Removing the Cluster</h2>
+  <div class="notice warning">
+    <strong>Plastic clips are brittle on older cars.</strong> The trim bezel clips become fragile with age and heat. Work slowly with plastic pry tools — metal tools will snap them. Having a few replacement clips on hand ($5 on eBay) is cheap insurance.
+  </div>
   <ol>
     <li>Disconnect the negative terminal of the 12V auxiliary battery (under the cargo floor). Wait 5 minutes before touching any dash components.</li>
-    <li>Using plastic pry tools, gently remove the instrument cluster trim bezel — it's clipped in, no screws. Start from the bottom and work up.</li>
+    <li>Using plastic pry tools, gently remove the instrument cluster trim bezel — it's clipped in, no screws. Start from the bottom and work up around all four edges.</li>
     <li>Remove the 4 screws holding the cluster in place (usually 10mm or Phillips).</li>
-    <li>Carefully pull the cluster forward. There are two wiring harness connectors on the back — squeeze the tab and pull straight off.</li>
+    <li>Carefully pull the cluster forward. There are two wiring harness connectors on the back — squeeze the tab and pull straight off. <strong>Note:</strong> one connector may include a ribbon cable. Do not yank — slide it straight out from its lock.</li>
     <li>The cluster is now free. Take it to a clean workspace.</li>
   </ol>
 
@@ -133,11 +142,15 @@
     <li>On the back of the cluster, remove the 4–6 Phillips screws holding the circuit board cover.</li>
     <li>Carefully lift out the circuit board. Note the orientation before removing.</li>
     <li>Inspect the capacitors — swollen tops (should be flat), brown residue around the base, or leaking electrolyte are signs of failure. Even if they look okay, replace them if you're already in here.</li>
-    <li>Using the soldering iron and wick, remove each old capacitor. Note polarity (the negative leg is marked with a stripe on the capacitor body).</li>
-    <li>Solder new capacitors in — same polarity, same position. New caps should be the same or higher voltage rating, same capacitance.</li>
+    <li>Using the soldering iron and wick, remove each old capacitor. Note polarity — the negative leg has a stripe on the capacitor body, and the PCB pad is also marked (typically a "–" or filled arc in the silkscreen). Both must agree before you solder.</li>
+    <li>Solder new capacitors in — correct polarity, same position. Use the same or higher voltage rating. For the primary 100µF cap, install a 220µF / 16V instead — it's a direct upgrade with the same footprint and improves long-term reliability.</li>
     <li>Inspect all solder joints — they should be shiny cones, not dull blobs.</li>
     <li>Reassemble the board and reinstall in cluster.</li>
   </ol>
+
+  <div class="notice tip">
+    <strong>Test before full reinstallation:</strong> Before snapping the bezel back in, reconnect the harness connectors, reconnect the 12V battery, and start the car. Verify all gauges sweep correctly on startup. This saves you from disassembling the dash again if a joint needs a touch-up.
+  </div>
 
   <h2>Reinstallation</h2>
   <ol>
