@@ -82,7 +82,7 @@ nav ul a.fork-btn:hover { background: rgba(235,10,30,0.1); }
 
 /* ── HERO ── */
 .hero {
-  background: var(--red);
+  background: var(--dark);
   color: white;
   text-align: center;
   padding: 5rem 1.5rem 4rem;
@@ -98,8 +98,8 @@ nav ul a.fork-btn:hover { background: rgba(235,10,30,0.1); }
     -55deg,
     transparent,
     transparent 25px,
-    rgba(0,0,0,0.04) 25px,
-    rgba(0,0,0,0.04) 50px
+    rgba(255,255,255,0.02) 25px,
+    rgba(255,255,255,0.02) 50px
   );
 }
 
@@ -110,12 +110,13 @@ nav ul a.fork-btn:hover { background: rgba(235,10,30,0.1); }
   font-weight: 900;
   line-height: 1.15;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
+.hero h1 span { color: var(--red); }
 
 .hero p {
   font-size: 1.15rem;
-  opacity: 0.92;
+  color: rgba(255,255,255,0.88);
   max-width: 580px;
   margin: 0 auto 1.75rem;
 }
@@ -138,7 +139,7 @@ nav ul a.fork-btn:hover { background: rgba(235,10,30,0.1); }
 }
 
 .hero-search button {
-  background: var(--dark);
+  background: var(--red);
   color: white;
   border: none;
   padding: 0.8rem 1.25rem;
@@ -390,7 +391,7 @@ tbody tr:hover td { background: #FFF5F5; }
 }
 
 .repair-header p {
-  opacity: 0.75;
+  color: rgba(255,255,255,0.88);
   font-size: 0.95rem;
   margin: 0;
 }
