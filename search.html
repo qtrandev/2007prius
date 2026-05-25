@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search — 2007Prius.org</title>
+  <meta name="description" content="Search repair guides, error codes, tools, and ownership tips for the Gen 2 Toyota Prius (2004–2009).">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .search-hero {
+      background: var(--dark);
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    .search-hero h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 1.25rem;
+    }
+    .search-hero h1 span { color: var(--red); }
+    .search-form {
+      display: flex;
+      max-width: 560px;
+      margin: 0 auto;
+      gap: 0;
+    }
+    #search-input {
+      flex: 1;
+      padding: 0.8rem 1.1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: var(--radius) 0 0 var(--radius);
+      outline: none;
+      font-family: inherit;
+    }
+    .search-form button {
+      background: var(--red);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .search-form button:hover { opacity: 0.88; }
+    #results-count {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .result-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 0.85rem;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .result-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+      text-decoration: none;
+    }
+    .result-card h3 {
+      color: var(--red);
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .result-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .result-url {
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 0.35rem;
+    }
+    .no-results {
+      text-align: center;
+      color: var(--muted);
+      padding: 3rem 0;
+    }
+    .no-results p { font-size: 0.95rem; }
+    .all-pages { margin-top: 2.5rem; }
+    .all-pages h2 { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="/repairs/">Repairs</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/timeline">Failure Timeline</a></li>
+      <li><a href="/tools">Tools &amp; Parts</a></li>
+      <li><a href="/error-codes">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="search-hero">
+  <h1>Search <span>2007Prius.org</span></h1>
+  <form class="search-form" onsubmit="return false;">
+    <input id="search-input" type="search" placeholder="e.g. hybrid battery, ABS light, check engine…" autocomplete="off" autofocus>
+    <button type="submit" onclick="runSearch()">Search</button>
+  </form>
+</div>
+
+<main>
+  <div id="results-count"></div>
+  <div id="results"></div>
+
+  <div class="all-pages" id="all-pages">
+    <h2>All Pages</h2>
+    <div class="cards" id="all-pages-list"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="/repairs/">Repairs</a>
+    <a href="/timeline">Failure Timeline</a>
+    <a href="/tools">Tools &amp; Parts</a>
+    <a href="/error-codes">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+<script src="assets/js/search-index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.min.js"></script>
+<script>
+  var fuse = new Fuse(SEARCH_INDEX, {
+    keys: [
+      { name: 'title',       weight: 3 },
+      { name: 'keywords',    weight: 2 },
+      { name: 'description', weight: 1 }
+    ],
+    threshold: 0.35,
+    ignoreLocation: true,
+    minMatchCharLength: 2
+  });
+
+  var input  = document.getElementById('search-input');
+  var resultsEl = document.getElementById('results');
+  var countEl   = document.getElementById('results-count');
+  var allPagesEl = document.getElementById('all-pages');
+  var allPagesListEl = document.getElementById('all-pages-list');
+
+  function renderAllPages() {
+    allPagesListEl.innerHTML = SEARCH_INDEX.map(function(p) {
+      return '<a class="card" href="' + p.url + '">' +
+        '<h3>' + p.title + '</h3>' +
+        '<p>' + p.description + '</p>' +
+        '</a>';
+    }).join('');
+  }
+
+  function runSearch() {
+    var q = input.value.trim();
+    var params = new URLSearchParams(window.location.search);
+    params.set('q', q);
+    history.replaceState(null, '', q ? '?' + params.toString() : window.location.pathname);
+
+    if (!q) {
+      resultsEl.innerHTML = '';
+      countEl.textContent = '';
+      allPagesEl.style.display = '';
+      return;
+    }
+
+    var hits = fuse.search(q);
+    allPagesEl.style.display = 'none';
+
+    if (hits.length === 0) {
+      countEl.textContent = '';
+      resultsEl.innerHTML = '<div class="no-results">' +
+        '<p>No results for <strong>"' + escHtml(q) + '"</strong>.</p>' +
+        '<p style="margin-top:0.5rem">Try a different term, or <a href="/repairs/">browse all repairs</a>.</p>' +
+        '</div>';
+      return;
+    }
+
+    countEl.textContent = hits.length + ' result' + (hits.length === 1 ? '' : 's') + ' for "' + q + '"';
+    resultsEl.innerHTML = hits.map(function(h) {
+      var p = h.item;
+      return '<a class="result-card" href="' + p.url + '">' +
+        '<h3>' + p.title + '</h3>' +
+        '<p>' + p.description + '</p>' +
+        '<div class="result-url">2007prius.org' + p.url + '</div>' +
+        '</a>';
+    }).join('');
+  }
+
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  input.addEventListener('input', runSearch);
+
+  var initialQ = new URLSearchParams(window.location.search).get('q') || '';
+  renderAllPages();
+  if (initialQ) {
+    input.value = initialQ;
+    runSearch();
+  }
+</script>
+</body>
+</html>
