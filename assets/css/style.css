@@ -39,6 +39,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   height: 58px;
 }
 
@@ -48,7 +49,6 @@ nav {
   letter-spacing: -0.5px;
   color: white;
   text-decoration: none;
-  margin-right: 3px;
 }
 
 .logo span { color: var(--red); }
@@ -466,14 +466,38 @@ footer a { color: var(--red); }
 .hamburger:hover { background: rgba(255,255,255,0.1); }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2rem; }
+
+/* Hamburger appears and Fork btn drops off first */
+@media (max-width: 820px) {
   .hamburger { display: block; }
+  nav ul li:nth-child(6) { display: none; }
+}
 
-  /* Closed: keep Repairs (1) and Search (2) visible in the nav bar, hide the rest */
-  nav ul li:nth-child(n+3) { display: none; }
+/* Error Codes drops off */
+@media (max-width: 700px) {
+  nav ul li:nth-child(5) { display: none; }
+}
 
-  /* Open: absolute dropdown showing all items */
+/* Tools & Parts drops off */
+@media (max-width: 600px) {
+  nav ul li:nth-child(4) { display: none; }
+}
+
+/* Failure Timeline drops off — only Repairs + Search remain */
+@media (max-width: 500px) {
+  nav ul li:nth-child(3) { display: none; }
+}
+
+/* Hero text scaling */
+@media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
+@media (max-width: 520px) {
+  .hero h1 { font-size: 1.7rem; }
+  .hero p  { font-size: 1rem; }
+  main     { padding: 2rem 1rem; }
+}
+
+/* Hamburger open: full dropdown over all breakpoints */
+@media (max-width: 820px) {
   header.nav-open nav ul {
     display: flex;
     position: absolute;
