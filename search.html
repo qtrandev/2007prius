@@ -166,6 +166,7 @@
   function renderAllPages() {
     allPagesListEl.innerHTML = SEARCH_INDEX.map(function(p) {
       return '<a class="card" href="' + p.url + '">' +
+        '<div class="card-icon">' + p.icon + '</div>' +
         '<h3>' + p.title + '</h3>' +
         '<p>' + p.description + '</p>' +
         '</a>';
@@ -201,7 +202,7 @@
     resultsEl.innerHTML = hits.map(function(h) {
       var p = h.item;
       return '<a class="result-card" href="' + p.url + '">' +
-        '<h3>' + p.title + '</h3>' +
+        '<h3>' + p.icon + ' ' + p.title + '</h3>' +
         '<p>' + p.description + '</p>' +
         '<div class="result-url">2007prius.org' + p.url + '</div>' +
         '</a>';
