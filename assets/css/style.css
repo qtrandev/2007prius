@@ -180,6 +180,14 @@ nav ul a.fork-btn:hover { background: rgba(235,10,30,0.1); }
   font-weight: 600;
   letter-spacing: 0.3px;
 }
+a.badge {
+  color: inherit;
+  text-decoration: none;
+}
+a.badge:hover {
+  background: rgba(255,255,255,0.28);
+  text-decoration: none;
+}
 
 /* ── MAIN ── */
 main {
