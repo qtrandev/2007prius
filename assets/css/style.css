@@ -48,6 +48,7 @@ nav {
   letter-spacing: -0.5px;
   color: white;
   text-decoration: none;
+  margin-right: 3px;
 }
 
 .logo span { color: var(--red); }
@@ -449,16 +450,69 @@ footer {
 footer p { margin: 0.25rem 0; }
 footer a { color: var(--red); }
 
+/* ── HAMBURGER BUTTON ── */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  border-radius: var(--radius);
+  transition: background 0.15s;
+}
+.hamburger:hover { background: rgba(255,255,255,0.1); }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .hero h1 { font-size: 2rem; }
-  nav ul li:nth-child(n+4):not(:last-child) { display: none; }
+  .hamburger { display: block; }
+
+  /* Closed: keep Repairs (1) and Search (2) visible in the nav bar, hide the rest */
+  nav ul li:nth-child(n+3) { display: none; }
+
+  /* Open: absolute dropdown showing all items */
+  header.nav-open nav ul {
+    display: flex;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--dark);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 0.25rem 0 0.75rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    gap: 0;
+  }
+
+  header.nav-open nav ul li { display: block !important; }
+
+  header.nav-open nav ul li a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    color: #ccc;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  header.nav-open nav ul li:last-child a { border-bottom: none; }
+
+  header.nav-open nav ul a.fork-btn {
+    border: none;
+    border-radius: 0;
+    padding: 0.75rem 1.5rem;
+    color: var(--red);
+  }
+
+  header.nav-open nav ul a.fork-btn:hover { background: rgba(235,10,30,0.08); text-decoration: none; }
 }
 
 @media (max-width: 520px) {
   .hero h1 { font-size: 1.7rem; }
   .hero p { font-size: 1rem; }
-  nav ul { gap: 0.75rem; }
-  nav ul li:nth-child(n+3):not(:last-child) { display: none; }
   main { padding: 2rem 1rem; }
 }
