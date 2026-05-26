@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark Plug Replacement — 2007Prius.org</title>
+  <meta name="description" content="How to replace spark plugs on a Gen 2 Toyota Prius (2004–2009). OEM part numbers, NGK and Denso alternatives, torque specs, and step-by-step access guide for the 1NZ-FXE engine.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260526">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .video-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .video-wrap iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+      border: none;
+    }
+    .video-caption {
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="/repairs/">Repairs</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/timeline">Failure Timeline</a></li>
+      <li><a href="/tools">Tools &amp; Parts</a></li>
+      <li><a href="/error-codes">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>🔩 Spark Plug Replacement</h1>
+  <p>Scheduled maintenance at 60k miles. Iridium plugs only — copper plugs are a false economy on this engine.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟡 Medium Difficulty</span>
+    <span class="meta-tag">⏱ 1–2 Hours</span>
+    <span class="meta-tag">💰 $25–$60 in parts</span>
+    <span class="meta-tag">📅 Every 60,000 miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/repairs/">Repairs</a> › Spark Plugs
+</div>
+
+<div class="repair-content">
+
+  <div class="notice warning">
+    <strong>Iridium plugs only.</strong> The Gen 2 Prius 1NZ-FXE engine runs best with iridium spark plugs. Copper plugs wear faster and the Prius hybrid system starts and stops the engine far more often than a conventional car — those extra ignition cycles eat cheap plugs quickly.
+  </div>
+
+  <h2>Why This Matters</h2>
+  <p>
+    The Gen 2 Prius uses a 1.5L 1NZ-FXE Atkinson-cycle engine. The hybrid system starts and stops it constantly — every time you accelerate from a full stop, every time you park. That's dozens of cold starts per day under normal city driving, compared to one or two in a conventional car.
+  </p>
+  <p>
+    Worn spark plugs on this engine cause misfires, rough idle on cold start, and a measurable drop in fuel economy. The <strong>P0301–P0304</strong> misfire codes are a common sign that plugs are overdue.
+  </p>
+  <p>
+    The other consideration: the plugs thread into an aluminum cylinder head. Aluminum expands and contracts more than steel. Always let the engine cool completely before removing plugs — pulling them hot risks stripping the threads.
+  </p>
+
+  <h2>Plug Specifications</h2>
+  <p>All 2004–2009 Gen 2 Prius models use the same engine and the same plug. There are 4 cylinders, so you need 4 plugs.</p>
+
+  <div class="table-wrap cost-table">
+    <table>
+      <thead><tr><th>Plug</th><th>Part Number</th><th>Price (each)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Toyota OEM Iridium</td>
+          <td>90919-01176</td>
+          <td>~$10–$15</td>
+          <td>Factory spec. Denso-made. Pre-gapped at 0.043" — do not adjust. Comes from a Toyota dealer or dealer parts site.</td>
+        </tr>
+        <tr>
+          <td>NGK IFR5T11</td>
+          <td>NGK #4996</td>
+          <td>~$6</td>
+          <td>Updated OEM-equivalent. The IFR5A11 (#5464) is the older spec; the IFR5T11 is the current replacement. Both are direct fits. Available on <a href="https://www.amazon.com/dp/B00TTP5RYQ" target="_blank" rel="noopener noreferrer">Amazon (4-pack) ↗</a> and RockAuto.</td>
+        </tr>
+        <tr>
+          <td>Denso SK16R11</td>
+          <td>Denso #3324</td>
+          <td>~$6</td>
+          <td>Denso is the OEM supplier for Toyota. This is a direct-fit iridium plug. Available on <a href="https://www.amazon.com/dp/B005BEL0K4" target="_blank" rel="noopener noreferrer">Amazon (4-pack) ↗</a> and RockAuto.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice tip">
+    <strong>Gap specification: 0.043" (1.1mm).</strong> All of the plugs above ship pre-gapped from the factory. Do not adjust the gap — the iridium fine-wire tip is fragile and bending it will crack or chip it. Just install them as-is.
+  </div>
+
+  <h2>What You'll Need</h2>
+  <h3>Tools</h3>
+  <ul>
+    <li>16mm spark plug socket (thin-wall, rubber-lined to grip the ceramic)</li>
+    <li>3/8" ratchet</li>
+    <li>4" extension (needed to reach into the plug wells)</li>
+    <li>10mm socket (for ignition coil bolts)</li>
+    <li>Torque wrench capable of 13 ft-lbs</li>
+    <li>Dielectric grease (apply to inside of coil boot before reinstalling)</li>
+  </ul>
+
+  <h3>Parts</h3>
+  <ul>
+    <li>4× iridium spark plugs (see table above)</li>
+    <li>Optional: 4× ignition coils if replacing proactively — see note below</li>
+  </ul>
+
+  <div class="notice tip">
+    <strong>Anti-seize?</strong> Skip it on iridium plugs. The plugs have a zinc-coated thread that provides its own anti-seize protection. Adding compound also changes the torque reading — you'd need to reduce the spec. Install dry and torque to spec.
+  </div>
+
+  <h2>Step-by-Step</h2>
+
+  <div class="notice warning">
+    <strong>Engine must be cold.</strong> The plugs thread into aluminum. Hot aluminum is softer and more likely to strip. Let the car sit at least 2 hours after running before starting this job.
+  </div>
+
+  <h3>1. Gain Access</h3>
+  <ol>
+    <li>Pop the hood and locate the plastic engine cover — it's the flat cover labeled "1NZ-FXE" sitting on top of the engine. It pulls straight up and off; there are no bolts.</li>
+    <li>Remove the air cleaner assembly: disconnect the MAF sensor connector (squeeze the tab and pull), loosen the hose clamp at the throttle body, and unclip the air filter box. Set the assembly aside. This opens up the space you need to reach the plugs and coils.</li>
+  </ol>
+
+  <h3>2. Remove the Ignition Coils</h3>
+  <p>The Gen 2 Prius uses a coil-on-plug (COP) system — one ignition coil sits directly on top of each spark plug. You remove the coil to access the plug beneath it.</p>
+  <ol start="3">
+    <li>Locate the four ignition coils — black cylindrical units in a row on the top of the engine.</li>
+    <li>Unplug the electrical connector from each coil: press the tab and pull straight off.</li>
+    <li>Remove the single 10mm bolt holding each coil down.</li>
+    <li>Pull each coil straight up out of the plug well. If a coil is stuck, twist it slightly while pulling — don't pry against the engine.</li>
+    <li>Work one plug at a time. This prevents any debris from the open cylinder wells while you work.</li>
+  </ol>
+
+  <h3>3. Remove the Old Plugs</h3>
+  <ol start="8">
+    <li>Blow or vacuum any debris from around each plug well before removing the plug. Anything in the well can fall into the cylinder when the plug comes out.</li>
+    <li>Thread the 16mm plug socket onto the extension, lower it into the well, and seat it on the plug.</li>
+    <li>Break the plug loose counterclockwise. If it won't budge, stop — do not force it. Apply penetrating oil around the base and wait 10 minutes.</li>
+    <li>Back the plug out by hand once loose. Check the tip: the electrode should be tan/grey. Black and sooty means rich mixture. White means lean. Oil fouling means engine wear.</li>
+  </ol>
+
+  <h3>4. Install the New Plugs</h3>
+  <ol start="12">
+    <li>Start each new plug by hand — thread it in at least 3–4 turns before using the ratchet. Aluminum threads cross-thread easily, and hand-threading lets you feel if it's going in wrong.</li>
+    <li>Once hand-tight, torque to <strong>13 ft-lbs (18 Nm)</strong>. This is the spec for the 1NZ-FXE. Don't overtighten — crushed gaskets and stripped aluminum threads are expensive mistakes.</li>
+  </ol>
+
+  <h3>5. Reinstall the Coils</h3>
+  <ol start="14">
+    <li>Apply a thin coat of dielectric grease to the inside of each coil boot before dropping it back on. This prevents the boot from seizing to the plug ceramic over the next 60k miles.</li>
+    <li>Seat each coil straight down into the well.</li>
+    <li>Replace the 10mm bolt. Torque to <strong>80 in-lbs (9 Nm)</strong> — snug but not cranked down.</li>
+    <li>Reconnect the electrical connector on each coil until it clicks.</li>
+  </ol>
+
+  <h3>6. Reassemble and Test</h3>
+  <ol start="18">
+    <li>Reinstall the air cleaner assembly and reconnect the MAF sensor connector.</li>
+    <li>Replace the engine cover — press it down until it seats.</li>
+    <li>Start the car. It should idle smoothly. If you feel a rough idle or misfire on startup, it usually means one coil connector isn't fully seated — check them before digging further.</li>
+  </ol>
+
+  <h2>Video Guides</h2>
+  <div class="video-grid">
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/_4nIblyjb94"
+        title="How to Replace Spark Plugs Toyota Prius 2003-2009"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+      <div class="video-caption">Gen 2 spark plug replacement — one of the most-referenced tutorials for this job</div>
+    </div>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/wOO-g40T6EM"
+        title="How to Replace Spark Plugs 2004-2009 Toyota Prius — 1A Auto"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+      <div class="video-caption">Step-by-step from 1A Auto</div>
+    </div>
+  </div>
+
+  <h2>Should You Replace the Ignition Coils Too?</h2>
+  <p>
+    Since you're removing all four coils to get to the plugs, this is a natural time to replace them if any are showing wear. Inspect each coil boot for cracks, carbon tracking, or corrosion on the connector pins. If a coil looks clean and passes a visual check, it can stay in for another 60k miles.
+  </p>
+  <p>
+    If one coil has already failed (P0301–P0304 misfire codes pointing to a specific cylinder), replace that coil now. Aftermarket coils run $15–$30 each; OEM Toyota coils are ~$50 each. You're already in there — swapping a suspect coil adds maybe 5 minutes.
+  </p>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      The Gen 2 spark plug job is one of the better routine maintenance items on this car — straightforward once you're past the air cleaner removal, and the engine layout doesn't require any of the cowl or wiper disassembly that some guides (written for the Gen 3) suggest.
+    </p>
+    <p>
+      The one step that causes problems is threading plugs in crooked. Slow down here: drop the plug into the socket, lower it into the well, and start the thread entirely by hand before any ratchet. Aluminum is unforgiving. A cross-threaded plug in a Prius head is a repair shop situation.
+    </p>
+    <p>
+      If you're buying plugs: NGK and Denso are both OEM-grade, both half the price of Toyota part numbers, both ship pre-gapped. Either is fine. The only wrong answer is copper plugs.
+    </p>
+  </div>
+
+  <h2>When to See a Mechanic</h2>
+  <p>
+    If a plug won't break loose after penetrating oil and patient effort, take the car to a shop. Snapping a plug off in an aluminum head is a far more expensive repair than the spark plug job. Shops have impact tools and better leverage without the risk of snapping in an awkward position.
+  </p>
+  <p>
+    If you see misfires after replacing plugs and coils, the next step is a compression test — ruling out a more serious engine issue before spending more on ignition components.
+  </p>
+
+  <div style="margin-top:2rem">
+    <a href="/repairs/" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/repairs/">Repairs</a>
+    <a href="/search">Search</a>
+    <a href="/timeline">Failure Timeline</a>
+    <a href="/tools">Tools &amp; Parts</a>
+    <a href="/error-codes">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+<script src="../assets/js/nav.js?v=20260526"></script>
+</body>
+</html>
