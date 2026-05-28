@@ -84,6 +84,13 @@ var SEARCH_INDEX = [
     keywords: "tires wheels wheel rim replacement size 185/65R15 P185 cost Michelin Goodyear Bridgestone Defender alignment rotation tire pressure PSI flat tire tread wear Costco"
   },
   {
+    icon: "🔨",
+    title: "Hatch Lift Struts Replacement",
+    url: "/repairs/hatch-struts",
+    description: "Replace the rear hatch gas lift struts when the hatch won't stay open. Easy DIY, $30 for a pair.",
+    keywords: "hatch struts lift supports trunk rear hatch falls won't stay open gas strut hatch support liftgate QiMox hatch prop trunk lid cargo area rear door tailgate"
+  },
+  {
     icon: "🚗",
     title: "Window Weatherstrip Replacement",
     url: "/repairs/weatherstrip",
