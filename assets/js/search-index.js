@@ -20,14 +20,14 @@ var SEARCH_INDEX = [
     title: "Hybrid Battery Replacement",
     url: "/repairs/hybrid-battery",
     description: "Replace the high-voltage hybrid traction battery. Covers reconditioning vs full replacement options.",
-    keywords: "hybrid battery traction pack replacement P3000 P0A80 reconditioning refurbished cells NiMH HV battery red triangle power loss won't accelerate battery warning light modules Dr Prius"
+    keywords: "hybrid battery traction pack replacement P3000 P0A80 p3000 p0a80 0a80 reconditioning refurbished cells NiMH HV battery red triangle triangle warning power loss won't accelerate sluggish battery warning light modules Dr Prius"
   },
   {
     icon: "💧",
     title: "Inverter Coolant Pump Replacement",
     url: "/repairs/inverter-pump",
     description: "Replace the inverter water pump that cools the hybrid system. Failure causes an overheating warning.",
-    keywords: "inverter coolant pump water pump hybrid overheating P0A93 triangle warning red SLLC pink coolant proactive preventive inverter water pump coolant flush Toyota Super Long Life"
+    keywords: "inverter coolant pump water pump hybrid overheating P0A93 p0a93 0a93 triangle warning red triangle SLLC pink coolant proactive preventive inverter water pump coolant flush Toyota Super Long Life"
   },
   // ── Brakes ──
   {
@@ -35,7 +35,7 @@ var SEARCH_INDEX = [
     title: "ABS Actuator Repair",
     url: "/repairs/abs-actuator",
     description: "Fix the three amigos: ABS, VSC, and brake warning lights together. Almost always the ABS actuator pump.",
-    keywords: "ABS VSC brake warning light three amigos actuator pump C2227 C1252 C1253 skid control brakes brake pump noise spongy brakes soft pedal brake light on bleeding"
+    keywords: "ABS VSC brake warning light three amigos 3 amigos 3amigos actuator pump C1252 C1253 c1252 c1253 skid control brakes brake pump noise pump running constantly pump won't stop spongy brakes soft pedal brake light on battery draining overnight bleeding"
   },
   // ── Electrical & Instrument ──
   {
@@ -43,7 +43,7 @@ var SEARCH_INDEX = [
     title: "Combination Meter Repair",
     url: "/repairs/combination-meter",
     description: "Fix a failing speedometer or dashboard instrument cluster.",
-    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero instrument panel broken capacitors dashboard lights gauges not working"
+    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero speedometer drops instrument panel broken capacitors dashboard lights gauges not working speedo stepper motor gauge drop"
   },
   {
     icon: "📺",
@@ -58,7 +58,7 @@ var SEARCH_INDEX = [
     title: "12V Auxiliary Battery",
     url: "/repairs/12v-battery",
     description: "Replace the 12V auxiliary battery. Failure causes the car not to start even with a full hybrid battery.",
-    keywords: "12v battery auxiliary dead won't start click S46B24R Panasonic small battery under hood no power nothing works dead car locks not working no dash lights jump start Group 51R JIS"
+    keywords: "12v battery auxiliary dead won't start won't turn on click S46B24R Panasonic small battery under hood no power nothing works dead car locks not working no dash lights jump start Group 51R JIS twelve volt 12 volt car dead"
   },
   {
     icon: "🔩",
@@ -73,14 +73,14 @@ var SEARCH_INDEX = [
     title: "P0420 Catalyst System Efficiency",
     url: "/repairs/p0420",
     description: "The most common check engine light on high-mileage Gen 2 Prius. Covers diagnosis, O2 sensor vs catalytic converter, replacement costs, and theft.",
-    keywords: "P0420 catalytic converter catalyst efficiency check engine light CEL O2 sensor oxygen sensor exhaust emissions cat replacement stolen theft smog test fail CARB EPA aftermarket direct fit downstream sensor Bank 1"
+    keywords: "P0420 p0420 p420 0420 420 catalytic converter cat converter catalyst efficiency check engine light CEL O2 sensor oxygen sensor exhaust emissions cat replacement stolen theft smog test fail CARB EPA aftermarket direct fit downstream sensor Bank 1"
   },
   {
     icon: "📟",
     title: "Clear Engine Fault Codes",
     url: "/repairs/clear-engine-codes",
     description: "How to read and clear OBD2 engine fault codes using a Bluetooth adapter and the Torque app.",
-    keywords: "OBD2 clear engine light codes check engine CEL Torque app Bluetooth adapter reset scanner P0420 ELM327 diagnostic warning light scan tool"
+    keywords: "OBD2 clear engine light codes check engine CEL Torque app Bluetooth adapter reset scanner P0420 p0420 ELM327 diagnostic warning light scan tool read codes how to clear codes erase codes"
   },
   // ── Lighting ──
   {
@@ -103,14 +103,14 @@ var SEARCH_INDEX = [
     title: "Cabin Air Filter Replacement",
     url: "/repairs/cabin-air-filter",
     description: "Replace the cabin air filter behind the glovebox. No tools, $10–15, done in 10 minutes. Easy DIY most owners skip for years.",
-    keywords: "cabin air filter HVAC air quality dust pollen glovebox filter replacement air flow vents weak airflow musty smell AC heat defrost 15000 miles maintenance"
+    keywords: "cabin air filter HVAC air quality dust pollen glovebox filter replacement air flow vents weak airflow musty smell bad smell AC air conditioning heat defrost 15000 miles maintenance cabin filter"
   },
   {
     icon: "🔑",
     title: "Key Fob Battery Replacement",
     url: "/repairs/key-fob-battery",
     description: "Replace the Gen 2 Prius smart key fob battery. CR2032, how to open the fob, and emergency start if the battery is completely dead.",
-    keywords: "key fob battery smart key CR2032 coin battery remote key fob dead battery won't start key battery low warning smart key battery low RFID transponder emergency start fob not working door won't unlock"
+    keywords: "key fob battery smart key CR2032 coin battery remote key fob dead battery won't start key battery low warning smart key battery low RFID transponder emergency start fob not working door won't unlock key remote dead key not working remote not working"
   },
   {
     icon: "🛢️",
@@ -161,6 +161,6 @@ var SEARCH_INDEX = [
     title: "Error Codes",
     url: "/error-codes",
     description: "Common OBD2 and Toyota-specific fault codes for the Gen 2 Prius with plain-English explanations.",
-    keywords: "error codes fault OBD2 P0420 P3000 C2227 P0A80 P0A93 C1252 C1336 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list"
+    keywords: "error codes fault OBD2 P0420 p420 P3000 p3000 P0A80 p0a80 P0A93 p0a93 C1252 c1252 C1253 c1253 C1336 c1336 C0200 P0301 P0171 P0441 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list what does code mean"
   }
 ];
