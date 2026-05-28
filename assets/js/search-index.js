@@ -47,10 +47,10 @@ var SEARCH_INDEX = [
   },
   {
     icon: "📺",
-    title: "MFD Screen Goes Dark",
+    title: "MFD Screen — Fuse Reset & Replacement",
     url: "/repairs/mfd-display",
-    description: "Fix the multi-function display (MFD) going black. Usually a blown DOME fuse.",
-    keywords: "MFD display screen dark black blank DOME fuse multi-function touchscreen navigation screen not working radio screen dark entertainment screen display off screen went black"
+    description: "Fix the MFD touchscreen going dark. DOME fuse reset is free and takes 5 minutes. Full physical replacement guide with compatibility, delamination risk, and vent clip warning.",
+    keywords: "MFD display screen dark black blank DOME fuse multi-function touchscreen navigation screen not working radio screen dark entertainment screen display off delamination vent clip center dash trim 2006 2007 2008 2009 replacement used eBay junkyard"
   },
   // ── Maintenance ──
   {
@@ -97,6 +97,13 @@ var SEARCH_INDEX = [
     url: "/repairs/tires",
     description: "Tire replacement guide with recommended sizes, costs, and 17-year real-world data.",
     keywords: "tires wheels wheel rim replacement size 185/65R15 P185 cost Michelin Goodyear Bridgestone Defender alignment rotation tire pressure PSI flat tire tread wear Costco"
+  },
+  {
+    icon: "🛢️",
+    title: "Oil Consumption — Monitor & Manage",
+    url: "/repairs/oil-consumption",
+    description: "High-mileage Gen 2 engines burn oil between changes. How to check the dipstick, symptoms of low oil, and options for managing consumption.",
+    keywords: "oil consumption low oil dipstick check engine knocking ticking weak acceleration oil level monitor burning oil 5W-30 synthetic add oil filler cap piston rings valve seals high mileage oil pressure warning Seafoam engine treatment"
   },
   // ── Body & Exterior ──
   {
