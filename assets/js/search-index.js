@@ -128,6 +128,13 @@ var SEARCH_INDEX = [
     keywords: "hatch struts lift supports trunk rear hatch falls won't stay open gas strut hatch support liftgate QiMox hatch prop trunk lid cargo area rear door tailgate"
   },
   {
+    icon: "🌧️",
+    title: "Trunk Water Leak — Find & Seal",
+    url: "/repairs/trunk-water-leak",
+    description: "Find and seal water leaks in the Gen 2 Prius cargo area. Three common sources: tail light gaskets, roof weld seams, and hatch weatherstripping. Covers rust treatment.",
+    keywords: "trunk water leak cargo area wet trunk rust spare tire well tail light gasket weld seam silicone sealant hatch weatherstrip leak water intrusion rain water in trunk 12v battery corrosion rust treatment"
+  },
+  {
     icon: "🚙",
     title: "Window Weatherstrip Replacement",
     url: "/repairs/weatherstrip",
