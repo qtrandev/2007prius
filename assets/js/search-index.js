@@ -99,6 +99,20 @@ var SEARCH_INDEX = [
     keywords: "tires wheels wheel rim replacement size 185/65R15 P185 cost Michelin Goodyear Bridgestone Defender alignment rotation tire pressure PSI flat tire tread wear Costco"
   },
   {
+    icon: "🌬️",
+    title: "Cabin Air Filter Replacement",
+    url: "/repairs/cabin-air-filter",
+    description: "Replace the cabin air filter behind the glovebox. No tools, $10–15, done in 10 minutes. Easy DIY most owners skip for years.",
+    keywords: "cabin air filter HVAC air quality dust pollen glovebox filter replacement air flow vents weak airflow musty smell AC heat defrost 15000 miles maintenance"
+  },
+  {
+    icon: "🔑",
+    title: "Key Fob Battery Replacement",
+    url: "/repairs/key-fob-battery",
+    description: "Replace the Gen 2 Prius smart key fob battery. CR2032, how to open the fob, and emergency start if the battery is completely dead.",
+    keywords: "key fob battery smart key CR2032 coin battery remote key fob dead battery won't start key battery low warning smart key battery low RFID transponder emergency start fob not working door won't unlock"
+  },
+  {
     icon: "🛢️",
     title: "Oil Consumption — Monitor & Manage",
     url: "/repairs/oil-consumption",
