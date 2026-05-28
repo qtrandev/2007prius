@@ -102,10 +102,22 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>C1210</strong></td>
-            <td>Brake Actuator Malfunction</td>
-            <td>ABS actuator pump failing. You'll see ABS, VSC, and brake lights together. See <a href="/repairs/abs-actuator">ABS guide</a>.</td>
+            <td><strong>C1252</strong></td>
+            <td>Brake Booster Pump Motor ON Time Abnormally Long</td>
+            <td>Brake booster pump motor failing — the primary code for "3 amigos." Pump runs continuously and drains 12V battery. See <a href="/repairs/abs-actuator">ABS actuator guide</a>.</td>
             <td>🔴 Immediate</td>
+          </tr>
+          <tr>
+            <td><strong>C1253</strong></td>
+            <td>Brake Booster Pump Motor Relay Malfunction</td>
+            <td>Brake booster pump relay fault. Appears alongside C1252. Confirms actuator assembly failure.</td>
+            <td>🔴 Immediate</td>
+          </tr>
+          <tr>
+            <td><strong>C1210</strong></td>
+            <td>Zero Point Calibration of Yaw Rate Sensor Undone</td>
+            <td>Yaw rate sensor calibration lost — often after a battery disconnect or ECU reset. Commonly appears alongside C1252/C1253 but is NOT the cause of actuator failure. Usually self-corrects after driving straight on a level road.</td>
+            <td>🟢 Low</td>
           </tr>
           <tr>
             <td><strong>C0200</strong></td>
@@ -147,13 +159,13 @@
           <tr>
             <td><strong>P0301–P0304</strong></td>
             <td>Misfire — Cylinders 1–4</td>
-            <td>Spark plugs, ignition coils, or injectors. Check plugs first — they're often overdue.</td>
+            <td>Spark plugs, ignition coils, or injectors. Check plugs first — they're often overdue. See <a href="/repairs/spark-plugs">Spark Plug guide</a>.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
             <td><strong>P0420</strong></td>
             <td>Catalyst System Efficiency Below Threshold</td>
-            <td>Catalytic converter degraded. O2 sensor could also be the culprit. Test sensor first before replacing cat.</td>
+            <td>Catalytic converter degraded. O2 sensor could also be the culprit — test sensor live data before replacing the cat. No drivability impact. See <a href="/repairs/p0420">P0420 guide</a>.</td>
             <td>🟡 Monitor</td>
           </tr>
           <tr>

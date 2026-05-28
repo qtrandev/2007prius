@@ -107,7 +107,7 @@ var SEARCH_INDEX = [
     keywords: "hatch struts lift supports trunk rear hatch falls won't stay open gas strut hatch support liftgate QiMox hatch prop trunk lid cargo area rear door tailgate"
   },
   {
-    icon: "🚗",
+    icon: "🚙",
     title: "Window Weatherstrip Replacement",
     url: "/repairs/weatherstrip",
     description: "Replace door window weatherstrip seals to stop wind noise and rattling.",
