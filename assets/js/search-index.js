@@ -1,4 +1,5 @@
 var SEARCH_INDEX = [
+  // ── Nav pages ──
   {
     icon: "🚗",
     title: "Home",
@@ -13,41 +14,7 @@ var SEARCH_INDEX = [
     description: "All repair guides for the Gen 2 Toyota Prius.",
     keywords: "repairs guides all list index diy how to fix maintenance service"
   },
-  {
-    icon: "🔌",
-    title: "12V Auxiliary Battery",
-    url: "/repairs/12v-battery",
-    description: "Replace the 12V auxiliary battery. Failure causes the car not to start even with a full hybrid battery.",
-    keywords: "12v battery auxiliary dead won't start click S46B24R Panasonic small battery under hood no power nothing works dead car locks not working no dash lights jump start Group 51R JIS"
-  },
-  {
-    icon: "🛑",
-    title: "ABS Actuator Repair",
-    url: "/repairs/abs-actuator",
-    description: "Fix the three amigos: ABS, VSC, and brake warning lights together. Almost always the ABS actuator pump.",
-    keywords: "ABS VSC brake warning light three amigos actuator pump C2227 C1252 C1253 skid control brakes brake pump noise spongy brakes soft pedal brake light on bleeding"
-  },
-  {
-    icon: "📟",
-    title: "Clear Engine Fault Codes",
-    url: "/repairs/clear-engine-codes",
-    description: "How to read and clear OBD2 engine fault codes using a Bluetooth adapter and the Torque app.",
-    keywords: "OBD2 clear engine light codes check engine CEL Torque app Bluetooth adapter reset scanner P0420 ELM327 diagnostic warning light scan tool"
-  },
-  {
-    icon: "🎛️",
-    title: "Combination Meter Repair",
-    url: "/repairs/combination-meter",
-    description: "Fix a failing speedometer or dashboard instrument cluster.",
-    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero instrument panel broken capacitors dashboard lights gauges not working"
-  },
-  {
-    icon: "💡",
-    title: "Headlight Bulb Replacement",
-    url: "/repairs/headlight-bulbs",
-    description: "Replace headlight bulbs on the Gen 2 Prius. Covers bulb type and removal.",
-    keywords: "headlight bulb replacement 9003 H4 HB2 high low beam headlamp burnt out Sylvania Silverstar dim lights flickering dark HID xenon D2R D4R fog light 9006"
-  },
+  // ── Hybrid System ──
   {
     icon: "🔋",
     title: "Hybrid Battery Replacement",
@@ -62,12 +29,36 @@ var SEARCH_INDEX = [
     description: "Replace the inverter water pump that cools the hybrid system. Failure causes an overheating warning.",
     keywords: "inverter coolant pump water pump hybrid overheating P0A93 triangle warning red SLLC pink coolant proactive preventive inverter water pump coolant flush Toyota Super Long Life"
   },
+  // ── Brakes ──
+  {
+    icon: "🛑",
+    title: "ABS Actuator Repair",
+    url: "/repairs/abs-actuator",
+    description: "Fix the three amigos: ABS, VSC, and brake warning lights together. Almost always the ABS actuator pump.",
+    keywords: "ABS VSC brake warning light three amigos actuator pump C2227 C1252 C1253 skid control brakes brake pump noise spongy brakes soft pedal brake light on bleeding"
+  },
+  // ── Electrical & Instrument ──
+  {
+    icon: "🎛️",
+    title: "Combination Meter Repair",
+    url: "/repairs/combination-meter",
+    description: "Fix a failing speedometer or dashboard instrument cluster.",
+    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero instrument panel broken capacitors dashboard lights gauges not working"
+  },
   {
     icon: "📺",
     title: "MFD Screen Goes Dark",
     url: "/repairs/mfd-display",
     description: "Fix the multi-function display (MFD) going black. Usually a blown DOME fuse.",
     keywords: "MFD display screen dark black blank DOME fuse multi-function touchscreen navigation screen not working radio screen dark entertainment screen display off screen went black"
+  },
+  // ── Maintenance ──
+  {
+    icon: "🔌",
+    title: "12V Auxiliary Battery",
+    url: "/repairs/12v-battery",
+    description: "Replace the 12V auxiliary battery. Failure causes the car not to start even with a full hybrid battery.",
+    keywords: "12v battery auxiliary dead won't start click S46B24R Panasonic small battery under hood no power nothing works dead car locks not working no dash lights jump start Group 51R JIS"
   },
   {
     icon: "🔩",
@@ -76,6 +67,30 @@ var SEARCH_INDEX = [
     description: "Replace spark plugs on the Gen 2 Prius. Iridium plugs only, torque specs, OEM part numbers, and step-by-step coil-on-plug access.",
     keywords: "spark plugs iridium NGK Denso IFR5T11 SK16R11 90919-01176 ignition coil tune up tuneup misfire P0301 P0302 P0303 P0304 60000 miles 1NZ-FXE rough idle hesitation"
   },
+  // ── Diagnostics ──
+  {
+    icon: "💨",
+    title: "P0420 Catalyst System Efficiency",
+    url: "/repairs/p0420",
+    description: "The most common check engine light on high-mileage Gen 2 Prius. Covers diagnosis, O2 sensor vs catalytic converter, replacement costs, and theft.",
+    keywords: "P0420 catalytic converter catalyst efficiency check engine light CEL O2 sensor oxygen sensor exhaust emissions cat replacement stolen theft smog test fail CARB EPA aftermarket direct fit downstream sensor Bank 1"
+  },
+  {
+    icon: "📟",
+    title: "Clear Engine Fault Codes",
+    url: "/repairs/clear-engine-codes",
+    description: "How to read and clear OBD2 engine fault codes using a Bluetooth adapter and the Torque app.",
+    keywords: "OBD2 clear engine light codes check engine CEL Torque app Bluetooth adapter reset scanner P0420 ELM327 diagnostic warning light scan tool"
+  },
+  // ── Lighting ──
+  {
+    icon: "💡",
+    title: "Headlight Bulb Replacement",
+    url: "/repairs/headlight-bulbs",
+    description: "Replace headlight bulbs on the Gen 2 Prius. Covers bulb type and removal.",
+    keywords: "headlight bulb replacement 9003 H4 HB2 high low beam headlamp burnt out Sylvania Silverstar dim lights flickering dark HID xenon D2R D4R fog light 9006"
+  },
+  // ── Tires ──
   {
     icon: "🏎️",
     title: "Tire Replacements",
@@ -83,6 +98,7 @@ var SEARCH_INDEX = [
     description: "Tire replacement guide with recommended sizes, costs, and 17-year real-world data.",
     keywords: "tires wheels wheel rim replacement size 185/65R15 P185 cost Michelin Goodyear Bridgestone Defender alignment rotation tire pressure PSI flat tire tread wear Costco"
   },
+  // ── Body & Exterior ──
   {
     icon: "🔨",
     title: "Hatch Lift Struts Replacement",
@@ -97,6 +113,7 @@ var SEARCH_INDEX = [
     description: "Replace door window weatherstrip seals to stop wind noise and rattling.",
     keywords: "weatherstrip door seal window rattle wind noise whistle OEM part rubber trim water leak leaking drafty rubber falling off rain coming in 75720-47010 75710-47010 window seal peeling"
   },
+  // ── Section pages ──
   {
     icon: "📅",
     title: "Failure Timeline",

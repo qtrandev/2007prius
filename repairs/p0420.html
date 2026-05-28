@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P0420 Catalyst System Efficiency — 2007Prius.org</title>
+  <meta name="description" content="Gen 2 Toyota Prius P0420 code guide. What it means, whether you can drive, how to tell if it's the cat or an O2 sensor, replacement costs, and catalytic converter theft.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260526">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="/repairs/">Repairs</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/timeline">Failure Timeline</a></li>
+      <li><a href="/tools">Tools &amp; Parts</a></li>
+      <li><a href="/error-codes">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>💨 P0420 — Catalyst System Efficiency</h1>
+  <p>The most common check engine light on high-mileage Gen 2 Prius. Rarely an emergency. Usually the catalytic converter.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟡 Medium</span>
+    <span class="meta-tag">⏱ Diagnosis: 30–60 Min</span>
+    <span class="meta-tag">💰 $150–$400 aftermarket cat</span>
+    <span class="meta-tag">📅 Typical: 150k–200k miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/repairs/">Repairs</a> › P0420
+</div>
+
+<div class="repair-content">
+
+  <h2>What P0420 Means</h2>
+  <p>
+    P0420 stands for "Catalyst System Efficiency Below Threshold (Bank 1)." The ECU monitors catalytic converter performance by comparing the upstream O2 sensor (before the cat) against the downstream O2 sensor (after the cat). A healthy cat converts exhaust pollutants and makes the downstream sensor read steadily. A worn cat lets too much unburned exhaust through — the downstream sensor starts oscillating like the upstream one, and the ECU flags it as P0420.
+  </p>
+  <p>
+    On a Gen 2 Prius with 150,000+ miles, P0420 almost always means the catalytic converter itself is worn out. A bad downstream oxygen sensor can also trigger it, and that's worth ruling out first — it's a $30–60 part versus a $150–400 catalytic converter.
+  </p>
+
+  <div class="notice tip">
+    <strong>P0420 is not an emergency.</strong> The car will drive, accelerate, and perform normally. You will not damage the engine by driving with this code. What you will do is fail an emissions/smog test in any state that requires one. If your registration renewal doesn't require emissions testing, you can treat this as a low-priority repair.
+  </div>
+
+  <h2>Why Gen 2 Prius Gets P0420</h2>
+  <p>
+    The Gen 2 Prius is hard on its catalytic converter compared to a conventional car. The hybrid system shuts off the engine constantly — at every red light, every time you park, every time you're coasting. Each restart is a cold start. Cold starts run rich (extra fuel) and generate more unburned hydrocarbons that the cat has to convert. Multiply that by hundreds of thousands of stop-start cycles over 15+ years and the catalyst material wears through faster than it would in a car that idles continuously.
+  </p>
+  <p>
+    Most Gen 2 owners hit P0420 somewhere between 150,000 and 200,000 miles. Some earlier, some much later. It's not a sign of engine trouble — it's wear on an emissions component that was designed for a finite service life.
+  </p>
+
+  <h2>Diagnose Before You Replace</h2>
+  <p>
+    Before replacing the catalytic converter, rule out a lazy downstream O2 sensor — it's a much cheaper fix if that's the cause.
+  </p>
+  <ul>
+    <li><strong>Clear the code and drive.</strong> If P0420 comes back within one or two drive cycles, the cat is almost certainly bad. If it takes weeks to return, an O2 sensor is more likely.</li>
+    <li><strong>Check live O2 sensor data with an OBD2 scanner.</strong> With the engine warm and at highway speed, the upstream sensor should oscillate rapidly between rich and lean. The downstream sensor should read a steady, slightly elevated voltage (~0.7V). If the downstream sensor is also oscillating like the upstream, the cat is not converting. If the downstream is flat at 0V or erratic without pattern, the sensor itself may be failing.</li>
+    <li><strong>Inspect for exhaust leaks.</strong> A leak between the upstream sensor and the cat can introduce outside air that confuses the downstream reading and triggers false P0420. Listen for a ticking or hissing from the exhaust when cold.</li>
+  </ul>
+
+  <h2>Your Options</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Option</th><th>Cost</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Replace downstream O2 sensor first</td>
+          <td>$30–80 + 30 min</td>
+          <td>Only worth trying if live data shows the downstream sensor behaving erratically rather than mirroring the upstream. The sensor is the Toyota part 89465-47050 (downstream). If P0420 returns after replacing it, the cat is the cause.</td>
+        </tr>
+        <tr>
+          <td>Aftermarket EPA-compliant catalytic converter</td>
+          <td>$150–300 parts + $100–200 labor</td>
+          <td>The practical fix for most owners. Look for "direct fit" listings for 2004–2009 Prius — they include the correct flanges and O2 sensor bungs. <strong>EPA-compliant is not the same as CARB-compliant</strong> — California and a few other states require CARB-certified parts for a legal repair. CARB cats run $300–500+. If you're in a CARB state, confirm compliance before buying.</td>
+        </tr>
+        <tr>
+          <td>OEM Toyota catalytic converter</td>
+          <td>$800–1,500+ parts + labor</td>
+          <td>Toyota OEM quality, but rarely worth the cost on a high-mileage car. An aftermarket direct-fit EPA cat will outlast the rest of the car at typical mileage.</td>
+        </tr>
+        <tr>
+          <td>Live with the code</td>
+          <td>Free</td>
+          <td>Valid if your state doesn't require emissions testing. The car performs normally with P0420. Clear the code before any inspection if you need to pass a visual-only check — but OBD2 readiness monitors may not have completed if you clear too close to inspection day. See the <a href="clear-engine-codes">Clear Engine Codes guide</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice warning">
+    <strong>Forum workaround — O2 sensor spacer:</strong> A commonly discussed fix on Prius forums involves installing a spacer (also called a defouler) on the downstream O2 sensor to change its position and make it read as if the cat is performing better than it is. This does not fix the underlying issue — it masks the code. It is considered tampering with emissions equipment under federal law and is illegal in states with emissions testing. It will not pass an OBD2 emissions inspection. Mention it here for awareness only; this site does not recommend it.
+  </div>
+
+  <h2>Installation: DIY or Shop?</h2>
+  <p>
+    The catalytic converter on the Gen 2 Prius is part of the exhaust manifold assembly — it sits close to the engine (close-coupled) and requires removing exhaust bolts that have often corroded solid after 15+ years of heat cycles. This is the kind of job where bolts snap and studs need extracting. Unless you have experience with exhaust work and an impact wrench, this is worth paying a shop to install. Labor typically runs $100–200.
+  </p>
+  <p>
+    Sourcing the part yourself and paying only for labor is a reasonable middle ground — buy the direct-fit aftermarket cat, bring it to a trusted independent shop, and ask them to install it. You avoid dealer markup and maintain control over part quality.
+  </p>
+
+  <h2>Catalytic Converter Theft</h2>
+  <div class="notice danger">
+    <strong>The Prius is one of the most targeted vehicles for catalytic converter theft.</strong> The hybrid system's stop-start cycling causes the precious metals inside the cat (platinum, palladium, rhodium) to concentrate at higher purity than in a conventional car. Thieves know this. A Prius cat sells for $200–400 at scrap — a 10-minute job with a battery-powered reciprocating saw.
+  </div>
+  <p>
+    Theft typically happens in parking lots and driveways overnight. The symptom when you start the car the next morning: an extremely loud exhaust — the engine sounds like a lawnmower or go-kart. First-time victims often don't immediately recognize what happened and assume the car developed a sudden engine problem. It's worth knowing this symptom so you recognize it for what it is.
+  </p>
+  <p>
+    If your cat is stolen:
+  </p>
+  <ul>
+    <li>The car is drivable but loud. Drive carefully — exhaust gases now exit directly into the engine bay area rather than through the full exhaust system.</li>
+    <li>File a police report before anything else. You'll need it for insurance.</li>
+    <li>Check your comprehensive auto insurance coverage — catalytic converter theft is typically covered under comprehensive (not collision). Your deductible applies.</li>
+    <li>Replacement with an aftermarket EPA-compliant direct-fit cat runs $150–300 in parts. A shop install adds $100–200 in labor. Total out of pocket: $250–500 before insurance.</li>
+  </ul>
+
+  <h3>Anti-Theft Options</h3>
+  <ul>
+    <li><strong>Catalytic converter shield / plate</strong> — Steel plate bolted over the cat to make cutting it out much harder. Several companies make Prius-specific shields (~$150–250 installed). Significantly deters opportunistic thieves; won't stop a determined crew with more time and tools.</li>
+    <li><strong>Park in a garage or well-lit area</strong> — The strongest deterrent is making the car inconvenient. Thieves move on to easier targets.</li>
+    <li><strong>VIN etching on the cat</strong> — Some insurance programs and police departments offer free VIN etching events. Makes the stolen part harder to sell, which reduces its value to thieves.</li>
+  </ul>
+
+  <div class="story-box">
+    <p>
+      The catalytic converter on this car was stolen in the driveway overnight. Discovered it the next morning when the engine started sounding like a go-kart. Initial assumption: something catastrophic had failed with the engine. It takes a moment to connect the noise to what actually happened.
+    </p>
+    <p>
+      Sourced an aftermarket EPA-compliant direct-fit catalytic converter for around $140 on Amazon (AUTOSAVER88 brand) and had a local shop install it. Total repair including labor: under $300. The car returned to normal immediately — the exhaust note, fuel economy, and P0420 code all resolved.
+    </p>
+    <p>
+      The Prius gets targeted specifically because of the hybrid system — the cat is worth more at scrap than the cat from a conventional car. If you park outside in an urban area, a cat shield is worth considering before you need this page.
+    </p>
+  </div>
+
+  <h2>Video Guide</h2>
+  <div class="notice tip">
+    <strong>Video coming soon.</strong> If you know a good YouTube walkthrough for Gen 2 Prius P0420 diagnosis or catalytic converter replacement, <a href="https://github.com/qtrandev/2007prius/issues" target="_blank" rel="noopener noreferrer">open a GitHub issue ↗</a> with the link.
+  </div>
+
+  <div style="margin-top:2rem">
+    <a href="/repairs/" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/repairs/">Repairs</a>
+    <a href="/search">Search</a>
+    <a href="/timeline">Failure Timeline</a>
+    <a href="/tools">Tools &amp; Parts</a>
+    <a href="/error-codes">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better.</p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+<script src="../assets/js/nav.js?v=20260526"></script>
+</body>
+</html>
