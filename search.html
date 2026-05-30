@@ -87,6 +87,19 @@
       color: #999;
       margin-top: 0.35rem;
     }
+    .approx-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #888;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 0.1em 0.45em;
+      margin-left: 0.5em;
+      vertical-align: middle;
+      letter-spacing: 0.02em;
+    }
     .no-results {
       text-align: center;
       color: var(--muted);
@@ -156,7 +169,8 @@
     ],
     threshold: 0.35,
     ignoreLocation: true,
-    minMatchCharLength: 1
+    minMatchCharLength: 1,
+    includeScore: true
   });
 
   var input  = document.getElementById('search-input');
@@ -201,10 +215,16 @@
     }
 
     countEl.textContent = hits.length + ' result' + (hits.length === 1 ? '' : 's') + ' for "' + q + '"';
+    var qLower = q.toLowerCase();
+    var fragment = '#:~:text=' + encodeURIComponent(q);
     resultsEl.innerHTML = hits.map(function(h) {
       var p = h.item;
-      return '<a class="result-card" href="' + p.url + '">' +
-        '<h3>' + p.icon + ' ' + p.title + '</h3>' +
+      var haystack = (p.title + ' ' + (p.keywords || '')).toLowerCase();
+      var isApprox = haystack.indexOf(qLower) === -1;
+      var href = p.url + (isApprox ? '' : fragment);
+      var badge = isApprox ? '<span class="approx-badge">~ Approximate</span>' : '';
+      return '<a class="result-card" href="' + href + '">' +
+        '<h3>' + p.icon + ' ' + p.title + badge + '</h3>' +
         '<p>' + p.description + '</p>' +
         '<div class="result-url">2007prius.org' + p.url + '</div>' +
         '</a>';
