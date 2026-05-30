@@ -73,7 +73,7 @@ var SEARCH_INDEX = [
     title: "AC Recharge — Adding Refrigerant",
     url: "/repairs/ac-recharge",
     description: "AC stops blowing cold after 10+ years. How to recharge with a consumer R-134a can. Low-side port procedure, electric compressor notes, and what diminishing results mean.",
-    keywords: "AC air conditioning recharge refrigerant R-134a freon AC Pro Walmart not cold warm air blowing hot AC not working AC stopped working AC weak AC recharge low side port AC can evaporator compressor leak AC Pro Arctic Freeze R134a 134a air conditioning not cold AC stopped working air not cold hot car summer heat"
+    keywords: "AC ac air conditioning recharge refrigerant R-134a r134a freon AC Pro Walmart not cold warm air blowing hot AC not working ac not working AC stopped working AC weak AC recharge low side port AC can evaporator compressor leak AC Pro Arctic Freeze R134a 134a air conditioning not cold air not cold hot car summer heat no cold air"
   },
   // ── Diagnostics ──
   {

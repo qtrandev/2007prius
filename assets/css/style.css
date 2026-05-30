@@ -370,6 +370,44 @@ p { margin-bottom: 0.75rem; color: var(--text); }
   color: #444;
 }
 
+/* ── PART IMAGE ── */
+.part-img {
+  float: right;
+  margin: 0 0 1.25rem 1.5rem;
+  text-align: center;
+  max-width: 140px;
+}
+.part-img a { display: block; }
+.part-img img {
+  width: 140px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: block;
+  transition: opacity 0.15s;
+}
+.part-img img:hover { opacity: 0.85; }
+.part-img figcaption {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+@media (max-width: 480px) {
+  .part-img {
+    float: none;
+    margin: 0 auto 1.25rem;
+  }
+}
+.part-img-sm {
+  width: 80px;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom: 0.5rem;
+}
+
 /* ── NOTICE BOXES ── */
 .notice {
   padding: 0.9rem 1.2rem;
