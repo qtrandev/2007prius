@@ -76,6 +76,13 @@ var SEARCH_INDEX = [
     keywords: "P0420 p0420 p420 0420 420 catalytic converter cat converter catalyst efficiency check engine light CEL O2 sensor oxygen sensor exhaust emissions cat replacement stolen theft smog test fail CARB EPA aftermarket direct fit downstream sensor Bank 1"
   },
   {
+    icon: "🌡️",
+    title: "P1121 — Coolant Flow Control Valve",
+    url: "/repairs/p1121",
+    description: "Replace the coolant flow control valve on a Gen 2 Prius. Fixes P1121 code, no cabin heat, and cold-start fuel economy loss.",
+    keywords: "P1121 p1121 coolant flow control valve CFCV no heat cabin heat heater not working cold P1120 P1122 P1123 16670-21010 three way valve coolant bypass valve heater core heat storage thermos TSB EG001-08 stuck valve position sensor"
+  },
+  {
     icon: "📟",
     title: "Clear Engine Fault Codes",
     url: "/repairs/clear-engine-codes",

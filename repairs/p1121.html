@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1121 Coolant Flow Control Valve — 2007Prius.org</title>
+  <meta name="description" content="How to replace the coolant flow control valve on a Gen 2 Toyota Prius (2004–2009). P1121 code, no cabin heat, cold-start fuel economy loss. OEM part number, access tips, and field notes.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260528">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .video-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .video-wrap iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+      border: none;
+    }
+    .video-caption {
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="/repairs/">Repairs</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/timeline">Failure Timeline</a></li>
+      <li><a href="/tools">Tools &amp; Parts</a></li>
+      <li><a href="/error-codes">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>🌡️ P1121 — Coolant Flow Control Valve</h1>
+  <p>No cabin heat, check engine light, cold-start fuel economy loss. The valve is stuck — here's how to replace it.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟡 Medium Difficulty</span>
+    <span class="meta-tag">⏱ 2–4 Hours</span>
+    <span class="meta-tag">💰 $120–$200 DIY</span>
+    <span class="meta-tag">📅 Typical: 100k+ miles</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/repairs/">Repairs</a> › P1121 Coolant Flow Control Valve
+</div>
+
+<div class="repair-content">
+
+  <div class="notice warning">
+    <strong>No heat in the cabin?</strong> This is the most noticeable symptom. The coolant flow control valve routes hot coolant to the heater core — when it sticks, heat disappears or becomes erratic. If you also have a check engine light, pull the code before assuming the heater core has failed.
+  </div>
+
+  <h2>Symptoms</h2>
+  <ul>
+    <li>Check engine light with code P1121 (sometimes accompanied by P1120, P1122, or P1123)</li>
+    <li>No cabin heat, or heat that works sometimes and not others</li>
+    <li>Engine takes longer than normal to reach operating temperature on cold starts</li>
+    <li>Slight drop in fuel economy, especially noticeable on short cold-weather trips</li>
+    <li>Hybrid system warning in some cases</li>
+  </ul>
+
+  <div class="notice tip">
+    <strong>Related codes:</strong> P1120, P1122, and P1123 are siblings of P1121 — all relate to the same coolant flow control valve circuit. If you see any of these alongside P1121, the valve is the likely root cause. Toyota TSB EG001-08 covers P1121 specifically for 2004–2007 model years but the same valve and repair applies through 2009.
+  </div>
+
+  <h2>What's Happening</h2>
+  <p>
+    The Gen 2 Prius has a three-way coolant flow control valve (CFCV) that manages where coolant goes between three circuits: the engine block, the heater core, and a heat-storage thermos tank that keeps coolant warm between trips. This is part of Toyota's cold-start efficiency strategy — on a cold start, hot coolant from the thermos flows back into the engine to speed warm-up, reduce fuel enrichment, and lower cold-start emissions.
+  </p>
+  <p>
+    The valve is motorized and has an integrated position sensor (a potentiometer) that tells the ECM where the valve spool is sitting. P1121 is thrown when the ECM commands the valve to move and the sensor reports no change — meaning the valve is physically stuck, or the sensor itself has failed.
+  </p>
+  <p>
+    In practice it's almost always the valve mechanically seizing — mineral deposits or corrosion lock the spool over time, especially if the coolant has never been changed. The ECM can't route coolant properly, so heat disappears and cold-start efficiency suffers.
+  </p>
+
+  <h2>Options</h2>
+  <div class="table-wrap cost-table">
+    <table>
+      <thead><tr><th>Option</th><th>Cost</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>DIY replacement</td>
+          <td>$120–$200</td>
+          <td>OEM part + coolant + any new clamps. Main challenge is hose clamp access in a tight space. Prep well and it's manageable.</td>
+        </tr>
+        <tr>
+          <td>Independent shop</td>
+          <td>$300–$400</td>
+          <td>~2 hours labor + part + coolant. Worth it if you're not comfortable with hose work in a confined space.</td>
+        </tr>
+        <tr>
+          <td>Toyota dealership</td>
+          <td>$370–$500</td>
+          <td>Higher labor rate. Check if TSB EG001-08 applies to your VIN — some early cars had this covered.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice tip">
+    <strong>Best time to do this: when replacing the inverter pump.</strong> Both repairs involve draining the same coolant circuit and working in the same area of the engine bay. Doing them together saves draining and refilling twice, and the headlight removal you do for CFCV access also opens up space for the inverter pump. See the <a href="/repairs/inverter-pump">Inverter Coolant Pump guide ↗</a>.
+  </div>
+
+  <h2>What You'll Need</h2>
+  <h3>Parts</h3>
+  <ul>
+    <li><strong>Coolant flow control valve</strong> — Toyota OEM part number <strong>16670-21010</strong> (~$80–$120 from online Toyota parts dealers). Stick with OEM — aftermarket valves have a poor community track record on this one.</li>
+    <li><strong>Toyota Super Long Life Coolant (SLLC, pink)</strong> — 1–2 gallons. You'll lose some during the swap; have extra on hand for the bleed.</li>
+    <li><strong>New hose clamps</strong> — buy a small pack of plastic/spring clamps sized to match. The originals can be brittle after 10+ years. Replacing them while you're in there is cheap insurance.</li>
+  </ul>
+
+  <h3>Tools</h3>
+  <ul>
+    <li>Long needle-nose pliers — essential for reaching the spring clamps in the tight space around the valve</li>
+    <li>Cable-operated hose clamp pliers (optional but helpful — the cable mechanism reaches into awkward angles where straight pliers struggle)</li>
+    <li>10mm socket and ratchet</li>
+    <li>Drain pan and shop rags</li>
+    <li>Funnel</li>
+  </ul>
+
+  <h2>Step-by-Step</h2>
+
+  <div class="notice warning">
+    <strong>Let the car cool completely before starting.</strong> The coolant system is pressurized when hot. Give it at least 2 hours after running.
+  </div>
+
+  <h3>1. Remove the Driver-Side Headlight for Access</h3>
+  <p>
+    The coolant flow control valve sits in a tight spot on the driver's side of the engine bay. Removing the headlight assembly opens up significantly more working room — this is the community-recommended approach and worth the 10 extra minutes.
+  </p>
+  <ol>
+    <li>Disconnect the 12V battery negative terminal first.</li>
+    <li>Remove the 3 bolts holding the driver-side headlight assembly (10mm). Two are on top, one is at the inner corner near the radiator support.</li>
+    <li>Unplug the headlight electrical connectors and set the assembly aside. You now have a much clearer view of and access to the valve area.</li>
+  </ol>
+
+  <h3>2. Drain the Coolant</h3>
+  <ol start="4">
+    <li>Place a drain pan under the front of the car.</li>
+    <li>Locate the coolant drain petcock on the radiator (driver's side, bottom) and open it to drain. Alternatively, loosen one of the lower hoses on the valve itself — coolant will drain as you work.</li>
+    <li>If you're also replacing the inverter pump, drain that circuit now too — see the <a href="/repairs/inverter-pump">Inverter Coolant Pump guide ↗</a>.</li>
+  </ol>
+
+  <h3>3. Remove the Old Valve</h3>
+  <ol start="7">
+    <li>Locate the coolant flow control valve — it's a roughly cylindrical component with three coolant hoses and one electrical connector. It sits on the driver's side near the firewall, below and behind where the headlight was.</li>
+    <li>Unplug the electrical connector (press the tab and pull).</li>
+    <li>Using long needle-nose pliers, squeeze each spring clamp and slide it back along the hose, away from the valve port. Work one hose at a time. <strong>Have rags ready</strong> — coolant will drain from each hose as you remove it.</li>
+    <li>With all three hoses free, the valve can be lifted out. Note the orientation of the hose ports before removing — take a photo if needed.</li>
+  </ol>
+
+  <h3>4. Install the New Valve</h3>
+  <ol start="11">
+    <li>Seat the new valve in the same position and orientation as the old one.</li>
+    <li>Push each hose firmly onto its port until it seats past the bead.</li>
+    <li>Slide each new clamp (or original clamp if reusing) into position just past the bead on the hose barb. Squeeze with the pliers to open, position, and release to clamp.</li>
+    <li>Reconnect the electrical connector — click until it seats.</li>
+  </ol>
+
+  <h3>5. Refill and Bleed the Coolant System</h3>
+  <ol start="15">
+    <li>Close the drain petcock or reconnect any lower hoses you loosened.</li>
+    <li>Refill with fresh Toyota SLLC coolant through the coolant reservoir. Fill slowly — the system has multiple circuits and traps air easily.</li>
+    <li>Reinstall the headlight assembly and reconnect the electrical connectors.</li>
+    <li>Reconnect the 12V battery.</li>
+    <li>Start the car in Ready mode and let it run for 5–10 minutes with the heater set to full hot. Watch the coolant level — it will drop as air purges. Top off as needed.</li>
+    <li>After the first few drives, recheck the coolant level and top off again. Air works its way out over 2–3 heat cycles.</li>
+    <li>Clear the P1121 code with an OBD2 scanner and verify it does not return. Confirm cabin heat is restored.</li>
+  </ol>
+
+  <h2>Video Guides</h2>
+  <div class="video-grid">
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/vL2kG8EMk20"
+        title="Gen 2 Prius P1121 Coolant Flow Control Valve Replacement"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+      <div class="video-caption">P1121 coolant flow control valve replacement walkthrough</div>
+    </div>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/NHO7H5gMBos"
+        title="Prius Coolant Control Valve P1121 Repair"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+      <div class="video-caption">Additional P1121 repair reference</div>
+    </div>
+  </div>
+
+  <h2>Notes from the Field</h2>
+  <div class="story-box">
+    <p>
+      <strong>January 2022:</strong> Tackled this repair with a helper. The prep made the difference — came in with new plastic hose clamps already sourced, fresh Toyota SLLC coolant on hand, and long needle-nose pliers specifically for the spring clamps in that tight space. Removing the driver-side headlight first was the right call; it opened up the access considerably.
+    </p>
+    <p>
+      The decision to replace the inverter pump at the same time was an easy one once the car was already opened up. Both repairs share the same coolant circuit — you're draining it anyway, the working area overlaps, and combining them saved hours versus doing each separately. If you're pulling the CFCV and your inverter pump is near 100k miles, do both in one session. See the <a href="/repairs/inverter-pump">Inverter Coolant Pump guide ↗</a>.
+    </p>
+    <p>
+      The hose clamp access is the hardest part of this job. Standard pliers don't reach cleanly — long needle-nose or cable-operated clamp pliers are genuinely necessary, not just convenient. Replacing the old spring clamps with new ones while everything is apart is worth the extra few dollars; the originals can be corroded and difficult to re-seat reliably.
+    </p>
+  </div>
+
+  <h2>When to See a Mechanic</h2>
+  <p>
+    If the P1121 code returns after replacing the valve, the wiring harness or connector to the valve may have corrosion or a break — this is less common but worth checking with a multimeter before buying a second valve. A shop with Toyota diagnostic software (Techstream) can read the sensor output directly and confirm whether the new valve is operating correctly.
+  </p>
+
+  <div style="margin-top:2rem">
+    <a href="/repairs/" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/repairs/">Repairs</a>
+    <a href="/search">Search</a>
+    <a href="/timeline">Failure Timeline</a>
+    <a href="/tools">Tools &amp; Parts</a>
+    <a href="/error-codes">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better. &nbsp;&middot;&nbsp; <a href="/disclaimer">Disclaimer</a></p>
+  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+<script src="../assets/js/nav.js?v=20260528"></script>
+</body>
+</html>
