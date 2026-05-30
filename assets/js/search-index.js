@@ -65,7 +65,15 @@ var SEARCH_INDEX = [
     title: "Spark Plug Replacement",
     url: "/repairs/spark-plugs",
     description: "Replace spark plugs on the Gen 2 Prius. Iridium plugs only, torque specs, OEM part numbers, and step-by-step coil-on-plug access.",
-    keywords: "spark plugs iridium NGK Denso IFR5T11 SK16R11 90919-01176 ignition coil tune up tuneup misfire P0301 P0302 P0303 P0304 60000 miles 1NZ-FXE rough idle hesitation engine rough misfiring rough cold start engine hesitation plug replacement scheduled maintenance"
+    keywords: "spark plugs iridium NGK Denso IFR5T11 SK16R11 90919-01176 ignition coil tune up tuneup misfire P0301 P0302 P0303 P0304 120000 miles 120k 60000 miles 1NZ-FXE rough idle hesitation engine rough misfiring rough cold start engine hesitation plug replacement scheduled maintenance"
+  },
+  // ── Comfort & Climate ──
+  {
+    icon: "❄️",
+    title: "AC Recharge — Adding Refrigerant",
+    url: "/repairs/ac-recharge",
+    description: "AC stops blowing cold after 10+ years. How to recharge with a consumer R-134a can. Low-side port procedure, electric compressor notes, and what diminishing results mean.",
+    keywords: "AC air conditioning recharge refrigerant R-134a freon AC Pro Walmart not cold warm air blowing hot AC not working AC stopped working AC weak AC recharge low side port AC can evaporator compressor leak AC Pro Arctic Freeze R134a 134a air conditioning not cold AC stopped working air not cold hot car summer heat"
   },
   // ── Diagnostics ──
   {
