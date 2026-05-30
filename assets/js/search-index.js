@@ -16,7 +16,7 @@ var SEARCH_INDEX = [
   },
   // ── Hybrid System ──
   {
-    icon: "🔋",
+    icon: "⚡",
     title: "Hybrid Battery Replacement",
     url: "/repairs/hybrid-battery",
     description: "Replace the high-voltage hybrid traction battery. Covers reconditioning vs full replacement options.",
@@ -43,7 +43,7 @@ var SEARCH_INDEX = [
     title: "Combination Meter Repair",
     url: "/repairs/combination-meter",
     description: "Fix a failing speedometer or dashboard instrument cluster.",
-    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero speedometer drops instrument panel broken capacitors dashboard lights gauges not working speedo stepper motor gauge drop"
+    keywords: "speedometer dashboard cluster instrument combination meter repair gauge needle odometer stopped fuel gauge stuck speedometer zero speedometer drops instrument panel broken capacitors dashboard lights gauges not working speedo stepper motor gauge drop cluster dark cluster went dark cluster black cluster off 12v battery disconnect reset cluster"
   },
   {
     icon: "📺",
@@ -54,7 +54,7 @@ var SEARCH_INDEX = [
   },
   // ── Maintenance ──
   {
-    icon: "⚡",
+    icon: "🔋",
     title: "12V Auxiliary Battery",
     url: "/repairs/12v-battery",
     description: "Replace the 12V auxiliary battery. Failure causes the car not to start even with a full hybrid battery.",
@@ -175,6 +175,6 @@ var SEARCH_INDEX = [
     title: "Error Codes",
     url: "/error-codes",
     description: "Common OBD2 and Toyota-specific fault codes for the Gen 2 Prius with plain-English explanations.",
-    keywords: "error codes fault OBD2 P0420 p420 P3000 p3000 P0A80 p0a80 P0A93 p0a93 C1252 c1252 C1253 c1253 C1336 c1336 C0200 P0301 P0171 P0441 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list what does code mean"
+    keywords: "error codes fault OBD2 P0420 p420 P3000 p3000 P0A80 p0a80 P0A93 p0a93 C1252 c1252 C1253 c1253 C1336 c1336 C0200 P0301 P0171 P0441 P1121 p1121 P3006 p3006 P3009 p3009 P0A0F P0A94 P0A80 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list what does code mean"
   }
 ];

@@ -7,7 +7,7 @@
   <title>Search — 2007Prius.org</title>
   <meta name="description" content="Search repair guides, error codes, tools, and ownership tips for the Gen 2 Toyota Prius (2004–2009).">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260528">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260529">
   <style>
     .search-hero {
       background: var(--dark);
@@ -144,18 +144,19 @@
   <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
 </footer>
 
-<script src="assets/js/search-index.js?v=20260528"></script>
+<script src="assets/js/search-index.js?v=20260529"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.min.js"></script>
 <script>
   var fuse = new Fuse(SEARCH_INDEX, {
     keys: [
       { name: 'title',       weight: 3 },
       { name: 'keywords',    weight: 2 },
-      { name: 'description', weight: 1 }
+      { name: 'description', weight: 1 },
+      { name: 'icon',        weight: 1 }
     ],
     threshold: 0.35,
     ignoreLocation: true,
-    minMatchCharLength: 2
+    minMatchCharLength: 1
   });
 
   var input  = document.getElementById('search-input');
@@ -223,6 +224,6 @@
     runSearch();
   }
 </script>
-<script src="assets/js/nav.js?v=20260528"></script>
+<script src="assets/js/nav.js?v=20260529"></script>
 </body>
 </html>

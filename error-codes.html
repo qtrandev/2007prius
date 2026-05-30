@@ -7,7 +7,7 @@
   <title>Error Codes — 2007Prius.org</title>
   <meta name="description" content="Common OBD2 and hybrid-specific error codes for the Gen 2 Toyota Prius (2004–2009). What the red triangle actually means.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260528">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260529">
 </head>
 <body>
 
@@ -50,19 +50,19 @@
           <tr>
             <td><strong>P0A80</strong></td>
             <td>Replace Hybrid Battery Pack</td>
-            <td>One or more battery modules has degraded significantly. May recondition or need replacement.</td>
+            <td>One or more battery modules has degraded significantly. May recondition or need replacement. See <a href="/repairs/hybrid-battery">Hybrid Battery guide</a>.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
             <td><strong>P3000</strong></td>
             <td>HV Battery Malfunction</td>
-            <td>General hybrid battery system fault. Check individual module voltages with Dr. Prius app.</td>
+            <td>General hybrid battery system fault. Check individual module voltages with Dr. Prius app. See <a href="/repairs/hybrid-battery">Hybrid Battery guide</a>.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
             <td><strong>P3006</strong></td>
             <td>HV Battery Module Voltage Variation</td>
-            <td>One module is significantly weaker than others — common sign of aging battery needing reconditioning.</td>
+            <td>One module is significantly weaker than others — common sign of aging battery needing reconditioning. See <a href="/repairs/hybrid-battery">Hybrid Battery guide</a>.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
@@ -80,7 +80,7 @@
           <tr>
             <td><strong>P0A93</strong></td>
             <td>Inverter Cooling System Performance</td>
-            <td>Inverter coolant pump failing or failed. Replace immediately.</td>
+            <td>Inverter coolant pump failing or failed. Replace immediately. See <a href="/repairs/inverter-pump">Inverter Pump guide</a>.</td>
             <td>🔴 Immediate</td>
           </tr>
           <tr>
@@ -111,7 +111,7 @@
           <tr>
             <td><strong>C1253</strong></td>
             <td>Brake Booster Pump Motor Relay Malfunction</td>
-            <td>Brake booster pump relay fault. Appears alongside C1252. Confirms actuator assembly failure.</td>
+            <td>Brake booster pump relay fault. Appears alongside C1252. Confirms actuator assembly failure. See <a href="/repairs/abs-actuator">ABS actuator guide</a>.</td>
             <td>🔴 Immediate</td>
           </tr>
           <tr>
@@ -181,6 +181,12 @@
             <td>MAF sensor dirty or failing, vacuum leak, or low fuel pressure. Clean MAF sensor first.</td>
             <td>🟡 Soon</td>
           </tr>
+          <tr>
+            <td><strong>P1121</strong></td>
+            <td>Coolant Flow Control Valve Position Sensor Signal Malfunction</td>
+            <td>The three-way coolant valve is stuck or its position sensor has failed. Symptoms: no cabin heat, longer cold-start warm-up, slight fuel economy loss. Toyota-specific code. See <a href="/repairs/p1121">P1121 guide</a>.</td>
+            <td>🟡 Soon</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -195,7 +201,7 @@
         <p>Hybrid system fault. Read codes immediately. Could be anything from inverter pump to hybrid battery to minor sensor issue. Do not ignore.</p>
       </div>
       <div class="card">
-        <div class="card-icon">🔋</div>
+        <div class="card-icon">⚡</div>
         <h3>HV Battery Warning</h3>
         <p>Hybrid battery is failing or has a cell issue. Run Dr. Prius battery test and read codes. May be reconditionable.</p>
       </div>
@@ -233,6 +239,6 @@
   <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
 </footer>
 
-<script src="assets/js/nav.js?v=20260528"></script>
+<script src="assets/js/nav.js?v=20260529"></script>
 </body>
 </html>
