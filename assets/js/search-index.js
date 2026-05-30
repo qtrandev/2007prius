@@ -54,7 +54,7 @@ var SEARCH_INDEX = [
   },
   // ── Maintenance ──
   {
-    icon: "🔌",
+    icon: "⚡",
     title: "12V Auxiliary Battery",
     url: "/repairs/12v-battery",
     description: "Replace the 12V auxiliary battery. Failure causes the car not to start even with a full hybrid battery.",
