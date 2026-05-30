@@ -128,6 +128,13 @@ var SEARCH_INDEX = [
   },
   // ── Body & Exterior ──
   {
+    icon: "🔒",
+    title: "Rear Hatch Latch Replacement",
+    url: "/repairs/hatch-latch",
+    description: "Fix a Gen 2 Prius rear hatch that won't open, won't stay closed, or triggers false alarms.",
+    keywords: "hatch latch rear latch hatch won't open hatch won't close hatch stuck alarm false alarm door ajar warning latch assembly 69350-47030 interior trim panel latch replacement hatch latch broken hatch latch stuck power lock actuator door ajar switch overnight alarm"
+  },
+  {
     icon: "🔨",
     title: "Hatch Lift Struts Replacement",
     url: "/repairs/hatch-struts",
