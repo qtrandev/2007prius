@@ -89,6 +89,12 @@
             <td>DC-DC converter (charges 12V from HV battery) is underperforming. Often precedes 12V battery failure.</td>
             <td>🟡 Soon</td>
           </tr>
+          <tr>
+            <td><strong>P3004</strong></td>
+            <td>Power Cable Fault</td>
+            <td>Fault detected in the HV power cable between the battery pack and the inverter. Could be insulation failure, a loose connection at the inverter or battery side, or internal cable damage. Do not drive — this is a high-voltage system fault. Have it diagnosed before continuing.</td>
+            <td>🔴 Immediate</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -115,6 +121,12 @@
             <td>🔴 Immediate</td>
           </tr>
           <tr>
+            <td><strong>C1241</strong></td>
+            <td>Low Battery Positive Voltage</td>
+            <td>12V auxiliary battery voltage is too low for the brake control system to operate normally. This is a <strong>12V battery problem, not an ABS actuator problem</strong> — check and charge the 12V battery before assuming brake actuator failure. Often appears with C1336 but without C1252/C1253. See <a href="/repairs/12v-battery">12V Battery guide</a>.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
             <td><strong>C1210</strong></td>
             <td>Zero Point Calibration of Yaw Rate Sensor Undone</td>
             <td>Yaw rate sensor calibration lost — often after a battery disconnect or ECU reset. Commonly appears alongside C1252/C1253 but is NOT the cause of actuator failure. Usually self-corrects after driving straight on a level road.</td>
@@ -136,6 +148,12 @@
             <td><strong>C0210</strong></td>
             <td>ABS Wheel Speed Sensor — Rear Right</td>
             <td>Rear sensors are often damaged by rust or road debris. Inspect sensor and tone ring.</td>
+            <td>🟡 Soon</td>
+          </tr>
+          <tr>
+            <td><strong>C0215</strong></td>
+            <td>ABS Wheel Speed Sensor — Rear Left</td>
+            <td>Same as C0210, opposite side.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
@@ -214,6 +232,11 @@
         <div class="card-icon">🌡️</div>
         <h3>Thermometer Warning</h3>
         <p>Engine overheating. Pull over immediately. On a Prius this could indicate head gasket issues at high mileage. Let engine cool fully before checking coolant level.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚠️</div>
+        <h3>Check Engine Light (amber)</h3>
+        <p>An emissions or engine management fault — P0xxx or P1xxx codes. On a Gen 2 the most common are P0420 (cat), P0171 (lean), or P0301–P0304 (misfire). Amber means read the code — not necessarily stop driving.</p>
       </div>
     </div>
   </section>

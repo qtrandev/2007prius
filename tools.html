@@ -174,8 +174,8 @@
         <tbody>
           <tr>
             <td>Engine oil</td>
-            <td>0W-20 full synthetic</td>
-            <td>Engine. 3.9 quarts with filter change. Gen 2 can consume oil after 100k — check monthly.</td>
+            <td>5W-30 full synthetic</td>
+            <td>Engine. 3.9 quarts with filter change. Gen 2 can consume oil after 100k — check monthly. Do NOT use 0W-20 (that's Gen 3, 2010+).</td>
           </tr>
           <tr>
             <td>Toyota Super Long Life Coolant (pink)</td>
@@ -197,6 +197,60 @@
     </div>
     <div class="notice danger" style="margin-top:1rem">
       <strong>Never mix Toyota SLLC (pink) with standard green coolant.</strong> The inverter cooling system uses a completely separate circuit. Using the wrong coolant can cause gelatinous deposits that destroy the inverter pump and inverter.
+    </div>
+  </section>
+
+  <section>
+    <h2>Fuse Quick Reference</h2>
+    <p>
+      The Gen 2 Prius has two fuse boxes. Check the diagram printed on each fuse box lid for the complete layout and exact amperage ratings — it's the authoritative reference for your specific car.
+    </p>
+    <ul>
+      <li><strong>Engine compartment fuse box</strong> — under the hood, driver's side near the firewall. Contains the main high-current fuses.</li>
+      <li><strong>Interior fuse box</strong> — driver's side dash panel, pull the end cap off. Contains accessory and system fuses.</li>
+    </ul>
+    <p>The fuses most relevant to repairs covered on this site:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Fuse</th><th>Box</th><th>What It Powers</th><th>Repair Connection</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DOME</strong></td>
+            <td>Engine compartment</td>
+            <td>Interior dome lights and the MFD touchscreen</td>
+            <td>If the MFD screen goes dark, pull and reseat this fuse first — it's a free 5-minute fix before replacing the screen. <a href="/repairs/mfd-display">→ MFD guide</a></td>
+          </tr>
+          <tr>
+            <td><strong>AM2</strong></td>
+            <td>Engine compartment</td>
+            <td>Main ECU power feed — retains computer memory when the car is off</td>
+            <td>Pulling AM2 and reinserting it performs a hard ECU reset, clearing stored adaptations. Used as a troubleshooting step for persistent electrical gremlins that survive a normal 12V disconnect.</td>
+          </tr>
+          <tr>
+            <td><strong>ABS</strong></td>
+            <td>Engine compartment</td>
+            <td>ABS / brake control system main fuse</td>
+            <td>If the "3 amigos" (ABS + VSC + brake lights) appear immediately after any electrical work, check this fuse before assuming actuator failure. <a href="/repairs/abs-actuator">→ ABS guide</a></td>
+          </tr>
+          <tr>
+            <td><strong>GAUGE</strong></td>
+            <td>Interior</td>
+            <td>Instrument cluster (combination meter)</td>
+            <td>If the entire cluster is completely dead — not just misbehaving gauges — check this fuse before doing a capacitor repair. <a href="/repairs/combination-meter">→ Combination meter guide</a></td>
+          </tr>
+          <tr>
+            <td><strong>CIG</strong></td>
+            <td>Interior</td>
+            <td>12V accessory outlet (cigarette lighter socket)</td>
+            <td>If the OBD2 port has no power, this fuse is often the cause — the port shares the same circuit on most Gen 2 trims. <a href="/repairs/clear-engine-codes">→ OBD2 guide</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice tip">
+      <strong>Always replace a fuse with the same amperage rating.</strong> The correct value is stamped on the fuse itself and printed on the fuse box lid diagram. A higher-rated fuse will not blow when it should — it lets the wiring overheat instead.
     </div>
   </section>
 

@@ -167,14 +167,14 @@ var SEARCH_INDEX = [
     icon: "🛠️",
     title: "Tools & Parts",
     url: "/tools",
-    description: "Recommended tools, OBD2 scanners, and parts sources for Gen 2 Prius work.",
-    keywords: "tools parts OBD2 scanner recommended torque wrench supplies Amazon part number RockAuto junkyard pull-a-part LKQ where to buy parts list tool list ELM327 Dr Prius Torque Pro"
+    description: "Recommended tools, OBD2 scanners, parts sources, fluids, and fuse quick reference for Gen 2 Prius work.",
+    keywords: "tools parts OBD2 scanner recommended torque wrench supplies Amazon part number RockAuto junkyard pull-a-part LKQ where to buy parts list tool list ELM327 Dr Prius Torque Pro fuse fuses AM2 am2 DOME dome CIG cig GAUGE gauge ABS fuse cigarette lighter 12v outlet accessory port power outlet not working fuse box engine compartment interior fuse box ECU reset hard reset electrical reset fluids 5W-30 oil coolant SLLC brake fluid"
   },
   {
     icon: "⚠️",
     title: "Error Codes",
     url: "/error-codes",
     description: "Common OBD2 and Toyota-specific fault codes for the Gen 2 Prius with plain-English explanations.",
-    keywords: "error codes fault OBD2 P0420 p420 P3000 p3000 P0A80 p0a80 P0A93 p0a93 C1252 c1252 C1253 c1253 C1336 c1336 C0200 P0301 P0171 P0441 P1121 p1121 P3006 p3006 P3009 p3009 P0A0F P0A94 P0A80 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list what does code mean"
+    keywords: "error codes fault OBD2 P0420 p420 P3000 p3000 P0A80 p0a80 P0A93 p0a93 P3004 p3004 C1241 c1241 C1252 c1252 C1253 c1253 C1336 c1336 C0200 C0215 P0301 P0171 P0441 P1121 p1121 P3006 p3006 P3009 p3009 P0A0F P0A94 diagnostic check engine triangle red triangle warning light hybrid codes fault codes list what does code mean"
   }
 ];
