@@ -7,7 +7,7 @@
   <title>Error Codes — 2007Prius.org</title>
   <meta name="description" content="Common OBD2 and hybrid-specific error codes for the Gen 2 Toyota Prius (2004–2009). What the red triangle actually means.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260531">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260601">
 </head>
 <body>
 
@@ -68,14 +68,14 @@
           <tr>
             <td><strong>P3009</strong></td>
             <td>HV Battery Leak Detected</td>
-            <td>Insulation failure in HV system. Could be wiring, battery casing, or inverter. Get this diagnosed professionally.</td>
+            <td>Insulation failure in HV system. Could be wiring, battery casing, or inverter. Get this diagnosed professionally. See <a href="/repairs/hybrid-battery">Hybrid Battery guide</a> for HV system context.</td>
             <td>🔴 Immediate</td>
           </tr>
           <tr>
             <td><strong>P0A0F</strong></td>
-            <td>Drive Motor "A" Position Sensor Circuit</td>
-            <td>Resolver issue or wiring fault in MG2 (traction motor). Check wiring harness first.</td>
-            <td>🟡 Soon</td>
+            <td>Engine Failed to Start</td>
+            <td>The HV system tried to start the ICE engine and it didn't start within the timeout. Most common cause: throttle body carbon buildup (especially after a 12V battery replacement — the ECU loses its learned throttle position). Also: weak 12V battery (see <a href="/repairs/12v-battery">12V Battery guide</a>), dirty MAF sensor, fuel delivery failure, ignition coil fault (see <a href="/repairs/spark-plugs">Spark Plug guide</a>). Red triangle; car will not move or goes into limp mode.</td>
+            <td>🔴 Immediate</td>
           </tr>
           <tr>
             <td><strong>P0A93</strong></td>
@@ -86,7 +86,7 @@
           <tr>
             <td><strong>P0A94</strong></td>
             <td>DC/DC Converter Performance</td>
-            <td>DC-DC converter (charges 12V from HV battery) is underperforming. Often precedes 12V battery failure.</td>
+            <td>DC-DC converter (charges 12V from HV battery) is underperforming. Often precedes 12V battery failure. See <a href="/repairs/12v-battery">12V Battery guide</a>.</td>
             <td>🟡 Soon</td>
           </tr>
           <tr>
@@ -129,7 +129,7 @@
           <tr>
             <td><strong>C1210</strong></td>
             <td>Zero Point Calibration of Yaw Rate Sensor Undone</td>
-            <td>Yaw rate sensor calibration lost — often after a battery disconnect or ECU reset. Commonly appears alongside C1252/C1253 but is NOT the cause of actuator failure. Usually self-corrects after driving straight on a level road.</td>
+            <td>Yaw rate sensor calibration lost — often after a battery disconnect or ECU reset. Commonly appears alongside C1252/C1253 but is NOT the cause of actuator failure. Usually self-corrects after driving straight on a level road. See <a href="/repairs/abs-actuator">ABS actuator guide</a>.</td>
             <td>🟢 Low</td>
           </tr>
           <tr>
@@ -159,7 +159,7 @@
           <tr>
             <td><strong>C1336</strong></td>
             <td>Zero Point Calibration of Deceleration Sensor Undone</td>
-            <td>After battery disconnect or skid control ECU reset, the sensor needs recalibration. Drive in a straight line on flat road to reset.</td>
+            <td>After battery disconnect or skid control ECU reset, the sensor needs recalibration. Drive in a straight line on flat road to reset. See <a href="/repairs/abs-actuator">ABS actuator guide</a>.</td>
             <td>🟢 Low</td>
           </tr>
         </tbody>
@@ -259,9 +259,9 @@
     <a href="https://github.com/qtrandev/2007prius">GitHub</a>
   </div>
   <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better. &nbsp;&middot;&nbsp; <a href="/disclaimer">Disclaimer</a></p>
-  <p style="margin-top:0.5rem;opacity:0.5">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+  <p style="margin-top:0.5rem">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
 </footer>
 
-<script src="assets/js/nav.js?v=20260530"></script>
+<script src="assets/js/nav.js?v=20260601"></script>
 </body>
 </html>

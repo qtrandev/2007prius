@@ -551,7 +551,7 @@ tbody tr:hover td { background: #FFF5F5; }
 /* ── FOOTER ── */
 footer {
   background: var(--dark);
-  color: #888;
+  color: #aaa;
   text-align: center;
   padding: 2.5rem 1.5rem;
   font-size: 0.82rem;
@@ -566,10 +566,10 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-links a { color: #888; }
+.footer-links a { color: #aaa; }
 .footer-links a:hover { color: white; text-decoration: none; }
 
-footer p { margin: 0.25rem 0; }
+footer p { margin: 0.25rem 0; color: #888; }
 footer a { color: var(--red); }
 
 /* ── HAMBURGER BUTTON ── */
