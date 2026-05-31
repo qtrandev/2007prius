@@ -204,15 +204,14 @@ h2 {
   color: var(--dark);
   margin-bottom: 1.25rem;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 0.6rem;
 }
 
 h2::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 4px;
-  height: 1.3em;
   background: var(--red);
   border-radius: 2px;
   flex-shrink: 0;
@@ -547,7 +546,7 @@ tbody tr:hover td { background: #FFF5F5; }
 
 .btn:hover { opacity: 0.85; text-decoration: none; }
 .btn-red { background: var(--red); color: white; }
-.btn-outline { border: 2px solid rgba(255,255,255,0.35); color: white; margin-left: 0.6rem; }
+.btn-outline { border: 2px solid rgba(255,255,255,0.35); color: white; }
 
 /* ── FOOTER ── */
 footer {
