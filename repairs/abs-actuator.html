@@ -131,7 +131,8 @@
     <li>Lift out the old actuator</li>
     <li>Install the replacement in reverse order — torque brake line fittings to spec (11 ft-lbs)</li>
     <li>Reconnect electrical connectors and 12V battery</li>
-    <li><strong>Bleed the entire brake system</strong> — all four corners, starting farthest from the master cylinder (rear passenger, rear driver, front passenger, front driver)</li>
+    <li><strong>Bleed the brake lines</strong> — all four corners, starting farthest from the master cylinder (rear passenger, rear driver, front passenger, front driver). This purges air from the lines and calipers but is not sufficient on its own after an actuator replacement.</li>
+    <li><strong>Run the Techstream ABS Auto Bleeding procedure.</strong> The actuator's internal passages trap air that a standard bleed cannot reach. Toyota Techstream's "Brake Actuator Auto Bleeding" function cycles the solenoids electronically to push that air out. Without this step, the pedal may feel spongy or inconsistent even after a full 4-corner bleed. A Mini-VCI cable ($15–20 on Amazon) with the free Techstream software is the DIY path. Some aftermarket scanners (Autel, Foxwell) can also run this procedure — confirm before buying.</li>
     <li>Clear ABS/VSC/brake codes with OBD2 scanner</li>
     <li>Test drive carefully — verify brakes feel normal and no warning lights return</li>
   </ol>
@@ -144,10 +145,10 @@
   <h2>Notes from the Field</h2>
   <div class="story-box">
     <p>
-      The "3 amigos" lighting up is alarming, but don't panic. The car is still drivable — your conventional brakes still work, just without ABS assist. However, the continuously-running pump is actively draining your battery, so don't leave it sitting.
+      The "3 amigos" lighting up is alarming, but don't panic. The base hydraulic brakes still work — you have stopping power. What you've lost is ABS, VSC, and traction control, which means your stopping distance increases and the car will not intervene in a skid. Drive it home or directly to a shop; don't use it as daily transportation while you source parts.
     </p>
     <p>
-      If you have a second car, disconnect the 12V battery overnight to prevent a dead battery situation while you source parts. The Prius will remember its settings when reconnected.
+      The bigger immediate threat is the 12V battery. The pump running continuously can drain it within hours — even overnight while parked. If you need to park it while sourcing parts, disconnect the negative 12V terminal. The Prius will remember its settings when reconnected.
     </p>
     <p>
       The best deal is usually: source a quality rebuilt actuator online ($500–$900), then pay a local mechanic just for the installation and brake bleeding ($150–$300 labor). Total: $650–$1,200 vs. $2,500+ at the dealer.
@@ -169,7 +170,7 @@
     <a href="/error-codes">Error Codes</a>
     <a href="https://github.com/qtrandev/2007prius">GitHub</a>
   </div>
-  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/master/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better. &nbsp;&middot;&nbsp; <a href="/disclaimer">Disclaimer</a></p>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/main/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better. &nbsp;&middot;&nbsp; <a href="/disclaimer">Disclaimer</a></p>
   <p style="margin-top:0.5rem">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
 </footer>
 
