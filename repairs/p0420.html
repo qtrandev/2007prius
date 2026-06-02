@@ -45,7 +45,7 @@
 
   <h2>What P0420 Means</h2>
   <p>
-    P0420 stands for "Catalyst System Efficiency Below Threshold (Bank 1)." The ECU monitors catalytic converter performance by comparing the upstream O2 sensor (before the cat) against the downstream O2 sensor (after the cat). A healthy cat converts exhaust pollutants and makes the downstream sensor read steadily. A worn cat lets too much unburned exhaust through — the downstream sensor starts oscillating like the upstream one, and the ECU flags it as P0420.
+    P0420 stands for "Catalyst System Efficiency Below Threshold (Bank 1)." The ECU monitors catalytic converter performance by comparing the upstream air-fuel ratio (A/F) sensor (before the cat) against the downstream oxygen sensor (after the cat). A healthy cat converts exhaust pollutants and makes the downstream sensor read a steady, elevated voltage. A worn cat lets too much unburned exhaust through — the downstream sensor starts switching like the upstream one, and the ECU flags it as P0420.
   </p>
   <p>
     On a Gen 2 Prius with 150,000+ miles, P0420 almost always means the catalytic converter itself is worn out. A bad downstream oxygen sensor can also trigger it, and that's worth ruling out first — it's a $30–60 part versus a $150–400 catalytic converter.
@@ -57,7 +57,7 @@
 
   <h2>Why Gen 2 Prius Gets P0420</h2>
   <p>
-    The Gen 2 Prius is hard on its catalytic converter compared to a conventional car. The hybrid system shuts off the engine constantly — at every red light, every time you park, every time you're coasting. Each restart is a cold start. Cold starts run rich (extra fuel) and generate more unburned hydrocarbons that the cat has to convert. Multiply that by hundreds of thousands of stop-start cycles over 15+ years and the catalyst material wears through faster than it would in a car that idles continuously.
+    The Gen 2 Prius is hard on its catalytic converter compared to a conventional car. The hybrid system shuts off the engine constantly — at every red light, every time you park, every time you're coasting. While the engine restarts warm, the catalytic converter cools below its light-off temperature (~400°C) during longer stops and must reheat before it converts efficiently again. These repeated thermal cycles — the cat heating and cooling hundreds of thousands of times over 15+ years — degrade the ceramic washcoat that holds the catalyst material, faster than in a car where the exhaust stays continuously hot.
   </p>
   <p>
     Most Gen 2 owners hit P0420 somewhere between 150,000 and 200,000 miles. Some earlier, some much later. It's not a sign of engine trouble — it's wear on an emissions component that was designed for a finite service life.
@@ -69,7 +69,7 @@
   </p>
   <ul>
     <li><strong>Clear the code and drive.</strong> If P0420 comes back within one or two drive cycles, the cat is almost certainly bad. If it takes weeks to return, an O2 sensor is more likely.</li>
-    <li><strong>Check live O2 sensor data with an OBD2 scanner.</strong> With the engine warm and at highway speed, the upstream sensor should oscillate rapidly between rich and lean. The downstream sensor should read a steady, slightly elevated voltage (~0.7V). If the downstream sensor is also oscillating like the upstream, the cat is not converting. If the downstream is flat at 0V or erratic without pattern, the sensor itself may be failing.</li>
+    <li><strong>Check live sensor data with an OBD2 scanner.</strong> With the engine warm and at highway speed, the upstream A/F sensor should show an active, changing signal — it's a wideband sensor measuring precise air-fuel ratio, not a simple rich/lean switch. The downstream oxygen sensor should read a steady, slightly elevated voltage (~0.7V). If the downstream is switching actively like the upstream, the cat is not converting. If the downstream reads flat at 0V or behaves erratically in a different pattern, the sensor itself may be failing.</li>
     <li><strong>Inspect for exhaust leaks.</strong> A leak between the upstream sensor and the cat can introduce outside air that confuses the downstream reading and triggers false P0420. Listen for a ticking or hissing from the exhaust when cold.</li>
   </ul>
 
@@ -118,7 +118,7 @@
 
   <h2>Catalytic Converter Theft</h2>
   <div class="notice danger">
-    <strong>The Prius is one of the most targeted vehicles for catalytic converter theft.</strong> The hybrid system's stop-start cycling causes the precious metals inside the cat (platinum, palladium, rhodium) to concentrate at higher purity than in a conventional car. Thieves know this. A Prius cat sells for $200–400 at scrap — a 10-minute job with a battery-powered reciprocating saw.
+    <strong>The Prius is one of the most targeted vehicles for catalytic converter theft.</strong> Prius cats contain a higher loading of precious metals (platinum, palladium, rhodium) per unit than a conventional car's cat — Toyota built them that way because the cat operates intermittently and at lower average temperatures, requiring more catalyst density to meet emissions standards. Those metals also don't burn off as fast as in a cat that runs continuously hot, so a high-mileage Prius cat retains more of its original precious metal content than a conventional car's would. Thieves know the math. A Prius cat sells for $200–400 at scrap — a 10-minute job with a battery-powered reciprocating saw.
   </div>
   <p>
     Theft typically happens in parking lots and driveways overnight. The symptom when you start the car the next morning: an extremely loud exhaust — the engine sounds like a lawnmower or go-kart. First-time victims often don't immediately recognize what happened and assume the car developed a sudden engine problem. It's worth knowing this symptom so you recognize it for what it is.
