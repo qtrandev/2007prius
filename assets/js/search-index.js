@@ -77,6 +77,13 @@ var SEARCH_INDEX = [
   },
   // ── Diagnostics ──
   {
+    icon: "⛽",
+    title: "Fuel Gauge Inaccuracy",
+    url: "/repairs/fuel-gauge",
+    description: "Gen 2 Prius fuel gauge reads wrong due to the rubber bladder fuel tank design. Free calibration reset procedure, bladder stiffening explanation, and tank replacement costs.",
+    keywords: "fuel gauge wrong inaccurate fuel gauge stuck full fuel gauge drops suddenly gauge not working fuel gauge broken gas gauge stays full pump clicks off early only 5 gallons low fuel warning early 150 miles bladder fuel tank rubber bladder accordion tank shrinking tank capacity reduced 11.9 gallons won't fill up tank fuel level sender P0460 P0461 P0462 P0463 inclination sensor calibration reset fuel gauge reset fuel level sensor tank replacement TSB EL010-04 2004 prius fuel issue gas tank problem"
+  },
+  {
     icon: "💨",
     title: "P0420 Catalyst System Efficiency",
     url: "/repairs/p0420",

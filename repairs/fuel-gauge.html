@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://2007prius.org/repairs/fuel-gauge">
+  <title>Fuel Gauge Inaccuracy — 2007Prius.org</title>
+  <meta name="description" content="Gen 2 Toyota Prius fuel gauge reads wrong: stays full too long, drops suddenly, or shows empty with fuel remaining. Caused by the rubber bladder fuel tank design. Free calibration reset and what the expensive fix looks like.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260601">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo">2007<span>PRIUS</span>.org</a>
+    <ul>
+      <li><a href="/repairs/">Repairs</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/timeline">Failure Timeline</a></li>
+      <li><a href="/tools">Tools &amp; Parts</a></li>
+      <li><a href="/error-codes">Error Codes</a></li>
+      <li><a href="https://github.com/qtrandev/2007prius" target="_blank" class="fork-btn">Fork on GitHub ↗</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<div class="repair-header">
+  <h1>⛽ Fuel Gauge Inaccuracy</h1>
+  <p>Gauge stays full too long, then drops suddenly. Or the pump clicks off after 5 gallons. This is a known Gen 2 design issue: the rubber bladder fuel tank.</p>
+  <div class="meta-tags">
+    <span class="meta-tag">🟡 Medium</span>
+    <span class="meta-tag">💰 Free calibration reset, or $1,000–$1,400+ for tank replacement</span>
+    <span class="meta-tag">📅 Worsens with age and mileage</span>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › <a href="/repairs/">Repairs</a> › Fuel Gauge Inaccuracy
+</div>
+
+<div class="repair-content">
+
+  <div class="notice warning">
+    <strong>Don't trust the low-fuel warning light on a high-mileage Gen 2.</strong> The gauge can show fuel remaining when the tank is nearly empty. Refill at 2 bars rather than waiting for the warning, and never run it close to empty.
+  </div>
+
+  <h2>Why This Happens</h2>
+  <p>
+    The Gen 2 Prius uses a collapsible rubber bladder inside the fuel tank instead of a conventional rigid tank. The design was driven by California CARB evaporative emissions rules: the bladder collapses around the fuel as it's used, eliminating the air/vapor headspace that conventional tanks vent through a charcoal canister.
+  </p>
+  <p>
+    The problem is that rubber ages. Over years and temperature cycles, the bladder stiffens and stops fully expanding when you refuel. A tank rated at 11.9 gallons (45L) may only accept 7–9 gallons before the pump clicks off, but the fuel sender float is calibrated to the full 11.9-gallon volume, so the gauge reads incorrectly against what's actually in the tank.
+  </p>
+  <p>
+    Toyota acknowledged the design was a dead end. The 2010 Gen 3 Prius dropped the bladder entirely and went back to a conventional rigid resin tank.
+  </p>
+
+  <h2>Three Separate Failure Modes</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cause</th><th>What It Does</th><th>Fix</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Bladder stiffening</strong></td>
+          <td>Tank accepts less fuel than rated. Gauge reads full at 7–9 gallons. Pump clicks off early.</td>
+          <td>No fix short of full tank replacement ($1,000–$1,400+). Workarounds only.</td>
+        </tr>
+        <tr>
+          <td><strong>Worn fuel sender wiper</strong></td>
+          <td>The resistive wiper wears a groove into the sender strip. Gauge drops suddenly or reads empty. Can trigger P0460–P0463.</td>
+          <td>Sender is sealed inside the bladder assembly. Tank must be replaced as a unit.</td>
+        </tr>
+        <tr>
+          <td><strong>Inclination sensor drift</strong></td>
+          <td>The combination meter has a liquid tilt sensor that compensates gauge reading for vehicle lean. If it drifts, the gauge reads wrong even when the bladder and sender are fine.</td>
+          <td><strong>Free DIY calibration reset</strong> (see procedure below).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice tip">
+    <strong>Start with the free fix.</strong> The inclination sensor reset costs nothing and takes under 5 minutes. If the gauge improves afterward, sensor drift was at least part of the problem. If there's no change, the bladder or sender is the culprit.
+  </div>
+
+  <h2>Symptoms</h2>
+  <ul>
+    <li>Gauge stays on full (or near full) much longer than expected, then drops quickly</li>
+    <li>Pump clicks off after only 4–6 gallons. Tank feels "full" but wasn't empty when you stopped.</li>
+    <li>Low-fuel warning light triggers early, around 150 miles instead of 350–400 miles</li>
+    <li>Gauge drops suddenly from nearly-full to near-empty (worn sender wiper jumping over a worn spot)</li>
+    <li>Gauge reads empty with fuel still physically in the tank</li>
+    <li>Gauge stuck at a fixed position</li>
+  </ul>
+
+  <h2>Free Fix: Inclination Sensor Calibration Reset</h2>
+  <p>
+    This resets the tilt sensor in the combination meter that adjusts gauge readings based on how level the car is parked. It's worth doing first. If the sensor drifted, this fixes it at no cost.
+  </p>
+
+  <div class="notice warning">
+    <strong>Park on a completely level surface before starting.</strong> The sensor is calibrating to "level" during this procedure. If the car is on a slope, you'll bake in a wrong calibration. Use a parking lot, not a sloped driveway.
+  </div>
+
+  <ol>
+    <li>Park on a level surface. Turn the ignition OFF.</li>
+    <li>Make sure the odometer is showing <strong>Trip A</strong> (not Trip B or total odometer).</li>
+    <li>Hold the <strong>ODO/TRIP button</strong> down and keep holding it throughout steps 4–6.</li>
+    <li>Press the Power button once (accessory mode, dash lights up, but do <strong>not</strong> go to Ready).</li>
+    <li>Press the Power button a second time (ignition ON, same result, not Ready).</li>
+    <li>While still holding ODO/TRIP, toggle it off then on 3 times within 5 seconds.</li>
+    <li>Keep holding until a 6-digit code appears in the odometer display.</li>
+    <li>Release ODO/TRIP, then press and hold it again for 5 seconds.</li>
+    <li>When the middle digit of a 5-digit code changes to <strong>"1"</strong>, release the button.</li>
+    <li>The odometer returns to normal. Trip A will reset to 0.0 (this is expected).</li>
+  </ol>
+
+  <div class="notice tip">
+    <strong>This is a calibration reset, not a mechanical fix.</strong> If the bladder has permanently stiffened or the sender wiper is worn through, this procedure won't help. But it's free and takes 5 minutes, so always try it first.
+  </div>
+
+  <h2>Expensive Fix: Tank Replacement</h2>
+  <p>
+    The fuel sender is sealed inside the bladder assembly and cannot be replaced separately. Toyota's own guidance states the tank must be replaced as a complete unit if damaged. There is no bladder-only repair or sender-only service procedure.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Repair</th><th>What It Fixes</th><th>Approximate Cost</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Full fuel tank assembly replacement</td>
+          <td>Bladder stiffening + worn sender</td>
+          <td>$1,000–$1,400+ (parts and labor)</td>
+        </tr>
+        <tr>
+          <td>Combination meter recalibration (dealer)</td>
+          <td>Inclination sensor drift only</td>
+          <td>$120–$180 (diagnosis + calibration)</td>
+        </tr>
+        <tr>
+          <td>Inclination sensor reset (DIY)</td>
+          <td>Inclination sensor drift only</td>
+          <td>Free</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    At $1,000–$1,400+ for a tank, most owners with an otherwise functional car choose to live with the gauge inaccuracy and manage it through habits rather than paying for the repair. That's a reasonable call. The car drives fine. The risk is running out of fuel if you rely on the gauge or warning light.
+  </p>
+
+  <h2>TSB EL010-04 (2004 Model Year Only)</h2>
+  <p>
+    Toyota issued Technical Service Bulletin EL010-04 covering fuel gauge inaccuracy, but it applies only to 2004 model year Priuses within a specific VIN range. The repair under the TSB involved replacing the fuel filler pipe and, in some cases, the combination meter cluster. Owners who had this done reported being able to fill the tank to 10+ gallons when they previously could only fit 7.5.
+  </p>
+  <p>
+    There is no equivalent TSB covering 2005–2009 model years. Owners of those years have no Toyota-backed coverage for this issue.
+  </p>
+
+  <h2>Error Codes</h2>
+  <p>
+    Most Gen 2 owners with gauge inaccuracy see <strong>no check engine light and no stored codes</strong>. The gauge simply reads wrong; the ECU doesn't know it's wrong. Codes only appear when there's a hard electrical fault in the sender circuit:
+  </p>
+  <ul>
+    <li><strong>P0460</strong> — Fuel Level Sensor "A" Circuit Malfunction</li>
+    <li><strong>P0461</strong> — Fuel Level Sensor "A" Circuit Range/Performance</li>
+    <li><strong>P0462</strong> — Fuel Level Sensor "A" Circuit Low Input</li>
+    <li><strong>P0463</strong> — Fuel Level Sensor "A" Circuit High Input</li>
+  </ul>
+  <p>
+    If you do see a P046x code, the sender wiper has likely failed electrically (open or short circuit) rather than just worn down gradually. Either way, the repair is the same: full tank replacement.
+  </p>
+
+  <h2>Living With It: Workarounds</h2>
+  <ul>
+    <li><strong>Refill at 2 bars.</strong> Don't wait for the warning light. On a car with bladder stiffening, the warning light may trigger later than you expect, or with less reserve than intended.</li>
+    <li><strong>Track miles, not bars.</strong> Refill every 300–350 miles as a conservative interval regardless of what the gauge shows.</li>
+    <li><strong>Fill slowly.</strong> After the pump first clicks off, fill slowly in short bursts. Some owners report the bladder expands gradually if given time, allowing a few more gallons in.</li>
+    <li><strong>Never run near empty.</strong> The fuel pump relies on gasoline for cooling. Running low stresses the pump and can shorten its life. With a bladder that reads incorrectly, "near empty" on the gauge may be more empty than it looks.</li>
+    <li><strong>Cold weather:</strong> the bladder stiffens further in cold temperatures. Toyota's own owner's manual noted a capacity reduction of up to 1.3 gallons (5L) at 14°F (-10°C). In cold climates, fill up more conservatively than usual.</li>
+  </ul>
+
+  <div style="margin-top:2rem">
+    <a href="/repairs/" style="color:var(--red);font-weight:700">← Back to all repairs</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/repairs/">Repairs</a>
+    <a href="/search">Search</a>
+    <a href="/timeline">Failure Timeline</a>
+    <a href="/tools">Tools &amp; Parts</a>
+    <a href="/error-codes">Error Codes</a>
+    <a href="https://github.com/qtrandev/2007prius">GitHub</a>
+  </div>
+  <p>Code: <a href="https://github.com/qtrandev/2007prius/blob/main/LICENSE">MIT License</a> &nbsp;·&nbsp; Content: CC BY-SA 4.0 &nbsp;·&nbsp; <a href="https://github.com/qtrandev/2007prius">Fork this repo</a> and make it better. &nbsp;&middot;&nbsp; <a href="/disclaimer">Disclaimer</a></p>
+  <p style="margin-top:0.5rem">2007prius.org — A community knowledge archive for Gen 2 Toyota Prius owners (2004–2009)</p>
+</footer>
+
+<script src="../assets/js/nav.js?v=20260601"></script>
+</body>
+</html>
