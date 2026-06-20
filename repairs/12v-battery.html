@@ -33,6 +33,14 @@
       font-size: 0.85rem;
       color: var(--muted);
     }
+    .half-img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 0.25rem;
+    }
+    @media (min-width: 600px) {
+      .half-img { max-width: 50%; }
+    }
   </style>
 </head>
 <body>
@@ -151,6 +159,11 @@
 
   <h2>Battery Location and Replacement</h2>
 
+  <figure style="margin:1rem 0">
+    <img src="../assets/img/12v-tools.jpg" alt="Tools used for 12V battery replacement" class="half-img">
+    <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.4rem;">Tools used for this job</figcaption>
+  </figure>
+
   <div class="notice tip">
     <strong>If the hatch won't open</strong> because the battery is completely dead, you need to release it manually before you can access the battery. Fold the rear seat backs forward from inside the car, then climb into the cargo area. Remove the cargo floor cover and carpet, locate the hatch latch mechanism at the back of the cargo area, and pull the manual release tab with your finger or a hook. The hatch should pop free. Push it up from inside.
   </div>
@@ -158,7 +171,7 @@
   <div class="notice tip">
     <strong>Alternative: power up via the front fuse box.</strong> If you have a portable jump starter, you can connect it to the engine compartment fuse box instead of crawling into the cargo area. Open the hood, locate the large positive stud/busbar on the fuse box (top-right of the engine bay), and clamp the red lead there. Connect the black lead to a chassis ground bolt. This gives the car enough power to electronically open the hatch so you can access the 12V battery normally.
     <br><br>
-    <img src="../assets/img/12v-booster.jpg" alt="Portable jump starter connected to the front fuse box positive terminal" style="max-width:50%;border-radius:6px;margin-top:0.25rem;">
+    <img src="../assets/img/12v-booster.jpg" alt="Portable jump starter connected to the front fuse box positive terminal" class="half-img">
   </div>
 
   <ol>
@@ -166,10 +179,20 @@
     <li><strong>The battery tray is on the right side</strong> of the cargo area. You'll see a small rectangular battery in a plastic tray with a vent tube attached.</li>
     <li><strong>Disconnect the negative terminal first</strong> (black, −), then the positive (red, +). This order matters. Reverse it on reinstall: positive first, then negative.</li>
     <li><strong>Remove the hold-down bracket</strong>, typically one bolt at the base of the tray.</li>
-    <li><strong>Lift the old battery out.</strong> It weighs about 26 lbs (12 kg).</li>
+    <li><strong>Lift the old battery out.</strong> It weighs about 26 lbs (12 kg).
+      <figure style="margin:0.75rem 0 0">
+        <img src="../assets/img/12v-newbattery.jpg" alt="New 12V replacement battery ready to install in the Prius cargo area" class="half-img">
+        <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.4rem;">New battery ready to drop into the tray</figcaption>
+      </figure>
+    </li>
     <li><strong>Set the new battery in the tray.</strong> Verify the terminals line up. Standing at the rear of the car looking in, the positive terminal should be on your left (toward the front of the car) and negative on your right. A standard 51 (non-reverse) has the terminals flipped and won't fit correctly.</li>
     <li><strong>Reinstall the hold-down bracket.</strong></li>
-    <li><strong>Connect positive terminal first, then negative.</strong></li>
+    <li><strong>Connect positive terminal first.</strong> Before connecting negative, unplug the white multi-pin battery sensor connector (visible near the negative cable). Then connect the negative terminal. Without unplugging that connector first, you'll get a noticeable spark when the negative touches — it's not dangerous but it's avoidable. Reconnect the white sensor connector after. This is also a good moment to verify voltage with a multimeter: a new battery out of the box typically reads around 12.4–12.6V.
+      <figure style="margin:0.75rem 0 0">
+        <img src="../assets/img/12v-voltage.jpg" alt="Multimeter reading 12.4V on new 12V battery before connecting negative terminal" class="half-img">
+        <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.4rem;">Positive connected, negative cable held back — multimeter reads ~12.4V on the new battery</figcaption>
+      </figure>
+    </li>
     <li><strong>Reattach the vent tube</strong> to the battery vent port. This tube routes battery gases outside the car. Don't skip it.</li>
     <li><strong>Start the car.</strong> It should come on normally. Any stored fault codes from the dead battery may trigger warning lights on first startup. They typically clear on their own after a drive cycle or two.</li>
   </ol>
